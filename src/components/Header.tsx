@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/sheet";
 
 const navItems = [
+    { title: "About Us", href: "/about-us" },
     { title: "Master Classes", href: "/webinar/masterclass" },
     { title: "Tirwin Talks", href: "/webinar/events" },
     { title: "Training", href: "/webinar/training" },
