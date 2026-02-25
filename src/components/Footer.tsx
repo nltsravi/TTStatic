@@ -41,19 +41,19 @@ export function Footer() {
                         <h4 className="text-lg font-bold text-white tracking-wide">TIRWIN</h4>
                         <ul className="space-y-3">
                             {[
-                                "About Us",
-                                "Branding",
-                                "What we Offer",
-                                "Leadership",
-                                "Careers",
-                                "Contact Us",
-                                "Terms & Conditions",
-                                "Privacy Policy",
-                                "Pricing Policy"
+                                { label: "About Us", href: "/about-us" },
+                                { label: "Branding", href: "#" },
+                                { label: "What we Offer", href: "#" },
+                                { label: "Leadership", href: "/leadership" },
+                                { label: "Careers", href: "#" },
+                                { label: "Contact Us", href: "/contact-us" },
+                                { label: "Terms & Conditions", href: "/terms-conditions" },
+                                { label: "Privacy Policy", href: "/privacy-policy" },
+                                { label: "Pricing Policy", href: "/pricing-policy" }
                             ].map((link) => (
-                                <li key={link}>
-                                    <Link href="#" className="text-sm text-slate-400 hover:text-white hover:underline transition-colors">
-                                        {link}
+                                <li key={link.label}>
+                                    <Link href={link.href} className="text-sm text-slate-400 hover:text-white hover:underline transition-colors">
+                                        {link.label}
                                     </Link>
                                 </li>
                             ))}
@@ -80,9 +80,9 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
                     <p>© 2025 TIRWIN Management PVT. LTD All Rights Reserved.</p>
                     <div className="flex items-center gap-4">
-                        <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <span className="w-1 h-1 rounded-full bg-slate-600" />
-                        <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+                        <Link href="/terms-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>
