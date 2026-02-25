@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Linkedin } from "lucide-react";
+import logoImage from "../../public/tirwin-talent-logo-new.jpg";
 
 export function Footer() {
     return (
@@ -12,7 +13,7 @@ export function Footer() {
                         <Link href="/" className="inline-block">
                             <div className="relative h-12 w-48 bg-white/10 rounded-lg p-2 filter brightness-0 invert">
                                 <Image
-                                    src="/tirwin-talent-logo-new.jpg"
+                                    src={logoImage}
                                     alt="Tirwin Talent Logo"
                                     fill
                                     style={{ objectFit: "contain", padding: "8px" }}

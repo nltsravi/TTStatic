@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
+import logoImage from "../../public/tirwin-talent-logo-new.jpg";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,7 @@ export function Header() {
                     <Link href="/" className="flex items-center space-x-2">
                         <div className="relative h-10 w-40">
                             <Image
-                                src="/tirwin-talent-logo-new.jpg"
+                                src={logoImage}
                                 alt="Tirwin Talent Logo"
                                 fill
                                 style={{ objectFit: "contain" }}
@@ -73,7 +74,7 @@ export function Header() {
                                 <Link href="/" className="flex items-center space-x-2 mb-4">
                                     <div className="relative h-10 w-32">
                                         <Image
-                                            src="/tirwin-talent-logo-new.jpg"
+                                            src={logoImage}
                                             alt="Tirwin Talent Logo"
                                             fill
                                             style={{ objectFit: "contain" }}
