@@ -42,7 +42,7 @@ export function Footer() {
                         <ul className="space-y-3">
                             {[
                                 { label: "About Us", href: "/about-us" },
-                                { label: "Branding", href: "#" },
+                                { label: "Branding", href: "/branding" },
                                 { label: "What we Offer", href: "#" },
                                 { label: "Leadership", href: "/leadership" },
                                 { label: "Careers", href: "#" },
