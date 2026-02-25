@@ -12,7 +12,7 @@ export function Footer() {
                         <Link href="/" className="inline-block">
                             <div className="relative h-12 w-48 bg-white/10 rounded-lg p-2 filter brightness-0 invert">
                                 <Image
-                                    src="https://www.tirwin.in/images/tirwin-logo.png"
+                                    src="/tirwin-talent-logo-new.jpg"
                                     alt="Tirwin Talent Logo"
                                     fill
                                     style={{ objectFit: "contain", padding: "8px" }}

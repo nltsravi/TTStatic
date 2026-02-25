@@ -35,7 +35,7 @@ export function Header() {
                     <Link href="/" className="flex items-center space-x-2">
                         <div className="relative h-10 w-40">
                             <Image
-                                src="https://www.tirwin.in/images/tirwin-logo.png"
+                                src="/tirwin-talent-logo-new.jpg"
                                 alt="Tirwin Talent Logo"
                                 fill
                                 style={{ objectFit: "contain" }}
@@ -61,15 +61,6 @@ export function Header() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <div className="hidden md:flex items-center gap-4">
-                        <Button variant="outline" asChild>
-                            <Link href="/auth/login">Login</Link>
-                        </Button>
-                        <Button asChild className="bg-[#0B2046] hover:bg-[#0B2046]/90">
-                            <Link href="/auth/register">Sign Up</Link>
-                        </Button>
-                    </div>
-
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden shrink-0">
@@ -82,7 +73,7 @@ export function Header() {
                                 <Link href="/" className="flex items-center space-x-2 mb-4">
                                     <div className="relative h-10 w-32">
                                         <Image
-                                            src="https://www.tirwin.in/images/tirwin-logo.png"
+                                            src="/tirwin-talent-logo-new.jpg"
                                             alt="Tirwin Talent Logo"
                                             fill
                                             style={{ objectFit: "contain" }}
@@ -98,14 +89,6 @@ export function Header() {
                                         {item.title}
                                     </Link>
                                 ))}
-                                <div className="flex flex-col gap-4 mt-6">
-                                    <Button variant="outline" className="w-full justify-start" asChild>
-                                        <Link href="/auth/login">Login</Link>
-                                    </Button>
-                                    <Button className="w-full justify-start bg-[#0B2046] hover:bg-[#0B2046]/90" asChild>
-                                        <Link href="/auth/register">Sign Up</Link>
-                                    </Button>
-                                </div>
                             </div>
                         </SheetContent>
                     </Sheet>
