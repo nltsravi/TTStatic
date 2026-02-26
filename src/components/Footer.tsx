@@ -32,7 +32,7 @@ export function Footer() {
                             maxWidth: "380px",
                             fontWeight: 300,
                         }}>
-                            Tirwin Talent – A specialized webinar platform by TIRWIN Management PVT. LTD, designed to empower logistics professionals. In collaboration with Neolumina Technology Solutions – Illuminating the Future.
+                            Tirwin Talent – A specialized webinar platform by TIRWIN Management PVT. LTD, designed to empower logistics professionals.
                         </p>
                         <div>
                             <p style={{
@@ -46,7 +46,7 @@ export function Footer() {
                             }}>
                                 Technology Partner
                             </p>
-                            <div className="relative h-10 w-32 rounded p-1"
+                            <div className="relative h-10 w-32 rounded p-1 mb-3"
                                 style={{ background: "#fff", border: "1px solid rgba(0,0,0,0.08)" }}>
                                 <Image
                                     src="https://www.tirwintalent.com/assets/images/nts-logo.png"
@@ -55,6 +55,16 @@ export function Footer() {
                                     style={{ objectFit: "contain" }}
                                 />
                             </div>
+                            <p style={{
+                                fontFamily: "var(--font-dm-sans), sans-serif",
+                                fontSize: "0.85rem",
+                                color: "rgba(0,0,0,0.65)",
+                                lineHeight: 1.5,
+                                maxWidth: "250px",
+                                fontWeight: 300,
+                            }}>
+                                Neolumina Technology Solutions – Illuminating the Future.
+                            </p>
                         </div>
                     </div>
 
