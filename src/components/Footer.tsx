@@ -7,7 +7,7 @@ import logoImage from "../../public/tirwin-logo.png";
 
 export function Footer() {
     return (
-        <footer className="dot-grid-bg text-white" style={{ paddingTop: "72px", paddingBottom: "40px" }}>
+        <footer className="bg-[#FAFAF8] text-[#3D3D3D] border-t border-gray-200" style={{ paddingTop: "72px", paddingBottom: "40px" }}>
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
 
@@ -15,19 +15,19 @@ export function Footer() {
                     <div className="lg:col-span-2 space-y-6">
                         <Link href="/" className="inline-block">
                             <div className="relative h-16 w-64 p-2 rounded"
-                                style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(200,134,10,0.15)" }}>
+                                style={{ background: "rgba(0,0,0,0.02)", border: "1px solid rgba(200,134,10,0.15)" }}>
                                 <Image
                                     src={logoImage}
                                     alt="Tirwin Talent Logo"
                                     fill
-                                    style={{ objectFit: "contain", padding: "6px", filter: "brightness(0) invert(1)" }}
+                                    style={{ objectFit: "contain", padding: "6px" }}
                                 />
                             </div>
                         </Link>
                         <p style={{
                             fontFamily: "var(--font-dm-sans), sans-serif",
                             fontSize: "0.95rem",
-                            color: "rgba(255,255,255,0.55)",
+                            color: "rgba(0,0,0,0.65)",
                             lineHeight: 1.8,
                             maxWidth: "380px",
                             fontWeight: 300,
@@ -38,7 +38,7 @@ export function Footer() {
                             <p style={{
                                 fontFamily: "var(--font-dm-sans), sans-serif",
                                 fontSize: "11px",
-                                color: "rgba(200,134,10,0.75)",
+                                color: "var(--gold)",
                                 letterSpacing: "0.18em",
                                 textTransform: "uppercase",
                                 fontWeight: 600,
@@ -47,7 +47,7 @@ export function Footer() {
                                 Technology Partner
                             </p>
                             <div className="relative h-10 w-32 rounded p-1"
-                                style={{ background: "rgba(255,255,255,0.95)" }}>
+                                style={{ background: "#fff", border: "1px solid rgba(0,0,0,0.08)" }}>
                                 <Image
                                     src="https://www.tirwintalent.com/assets/images/nts-logo.png"
                                     alt="NTS Partner Logo"
@@ -64,7 +64,7 @@ export function Footer() {
                             fontFamily: "'Playfair Display', Georgia, serif",
                             fontSize: "1.125rem",
                             fontWeight: 600,
-                            color: "#fff",
+                            color: "var(--navy)",
                             letterSpacing: "0.02em",
                             display: "flex",
                             alignItems: "center",
@@ -91,7 +91,7 @@ export function Footer() {
                                         style={{
                                             fontFamily: "var(--font-dm-sans), sans-serif",
                                             fontSize: "0.95rem",
-                                            color: "rgba(255,255,255,0.5)",
+                                            color: "rgba(0,0,0,0.6)",
                                             transition: "color 0.2s ease",
                                             fontWeight: 300,
                                         }}
@@ -110,7 +110,7 @@ export function Footer() {
                             fontFamily: "'Playfair Display', Georgia, serif",
                             fontSize: "1.125rem",
                             fontWeight: 600,
-                            color: "#fff",
+                            color: "var(--navy)",
                             display: "flex",
                             alignItems: "center",
                             gap: "8px",
@@ -128,10 +128,10 @@ export function Footer() {
                                     border: "1px solid rgba(200,134,10,0.25)",
                                     transition: "background 0.2s ease, border-color 0.2s ease",
                                 }}
-                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(200,134,10,0.15)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.6)"; }}
+                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(200,134,10,0.1)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.5)"; }}
                                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.25)"; }}
                             >
-                                <Facebook className="h-4 w-4" style={{ color: "rgba(255,255,255,0.6)" }} />
+                                <Facebook className="h-4 w-4" style={{ color: "rgba(0,0,0,0.6)" }} />
                                 <span className="sr-only">Facebook</span>
                             </a>
                             <a
@@ -142,10 +142,10 @@ export function Footer() {
                                     border: "1px solid rgba(200,134,10,0.25)",
                                     transition: "background 0.2s ease, border-color 0.2s ease",
                                 }}
-                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(200,134,10,0.15)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.6)"; }}
+                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(200,134,10,0.1)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.5)"; }}
                                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.25)"; }}
                             >
-                                <Linkedin className="h-4 w-4" style={{ color: "rgba(255,255,255,0.6)" }} />
+                                <Linkedin className="h-4 w-4" style={{ color: "rgba(0,0,0,0.6)" }} />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
                         </div>
@@ -153,14 +153,14 @@ export function Footer() {
                 </div>
 
                 {/* Gold separator */}
-                <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(200,134,10,0.4), transparent)", marginBottom: "28px" }} />
+                <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(200,134,10,0.2), transparent)", marginBottom: "28px" }} />
 
                 {/* Copyright */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <p style={{
                         fontFamily: "var(--font-dm-sans), sans-serif",
                         fontSize: "0.875rem",
-                        color: "rgba(255,255,255,0.35)",
+                        color: "rgba(0,0,0,0.5)",
                         letterSpacing: "0.04em",
                     }}>
                         © 2025 TIRWIN Management PVT. LTD All Rights Reserved.
@@ -176,7 +176,7 @@ export function Footer() {
                                 style={{
                                     fontFamily: "var(--font-dm-sans), sans-serif",
                                     fontSize: "0.875rem",
-                                    color: "rgba(255,255,255,0.35)",
+                                    color: "rgba(0,0,0,0.5)",
                                     transition: "color 0.2s ease",
                                     letterSpacing: "0.04em",
                                 }}
@@ -191,3 +191,4 @@ export function Footer() {
         </footer>
     );
 }
+
