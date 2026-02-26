@@ -64,7 +64,7 @@ export function Categories() {
                     </h2>
                     <p style={{
                         fontFamily: "var(--font-dm-sans), sans-serif",
-                        fontSize: "1.05rem",
+                        fontSize: "1.25rem",
                         color: "var(--text-muted)",
                         maxWidth: "600px",
                         lineHeight: 1.7,
@@ -150,7 +150,7 @@ export function Categories() {
                                 </h3>
                                 <p style={{
                                     fontFamily: "var(--font-dm-sans), sans-serif",
-                                    fontSize: "0.8rem",
+                                    fontSize: "0.95rem",
                                     color: "var(--text-muted)",
                                     lineHeight: 1.7,
                                     fontWeight: 300,

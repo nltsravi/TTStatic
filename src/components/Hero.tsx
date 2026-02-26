@@ -72,7 +72,7 @@ export function Hero() {
 
                     <p style={{
                         fontFamily: "var(--font-dm-sans), sans-serif",
-                        fontSize: "clamp(1rem, 2vw, 1.2rem)",
+                        fontSize: "clamp(1.125rem, 2.5vw, 1.35rem)",
                         color: "rgba(255,255,255,0.72)",
                         fontWeight: 300,
                         lineHeight: 1.75,

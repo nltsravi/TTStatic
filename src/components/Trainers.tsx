@@ -50,7 +50,7 @@ export function Trainers() {
                     </h2>
                     <p style={{
                         fontFamily: "var(--font-dm-sans), sans-serif",
-                        fontSize: "1.05rem",
+                        fontSize: "1.25rem",
                         color: "var(--text-muted)",
                         maxWidth: "550px",
                         lineHeight: 1.7,
