@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Lightbulb, Users, LineChart, GraduationCap } from "lucide-react";
 
@@ -53,77 +55,87 @@ const advisors = [
 ];
 
 const philosophy = [
-    {
-        title: "Innovation",
-        description: "Continuously exploring new technologies and methodologies to transform business operations.",
-        icon: Lightbulb
-    },
-    {
-        title: "Collaboration",
-        description: "Building strong partnerships and fostering teamwork to achieve exceptional results.",
-        icon: Users
-    },
-    {
-        title: "Excellence",
-        description: "Maintaining the highest standards of quality and performance in everything we do.",
-        icon: LineChart
-    },
-    {
-        title: "Growth",
-        description: "Investing in talent development and continuous learning to drive sustainable success.",
-        icon: GraduationCap
-    }
+    { title: "Innovation", description: "Continuously exploring new technologies and methodologies to transform business operations.", icon: Lightbulb },
+    { title: "Collaboration", description: "Building strong partnerships and fostering teamwork to achieve exceptional results.", icon: Users },
+    { title: "Excellence", description: "Maintaining the highest standards of quality and performance in everything we do.", icon: LineChart },
+    { title: "Growth", description: "Investing in talent development and continuous learning to drive sustainable success.", icon: GraduationCap }
 ];
+
+function SectionLabel({ label, title }: { label: string; title: string }) {
+    return (
+        <div className="space-y-2 mb-8">
+            <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "10px", fontWeight: 600, letterSpacing: "0.2em", color: "var(--gold)", textTransform: "uppercase" }}>{label}</p>
+            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#0B2046", lineHeight: 1.2, borderBottom: "1px solid rgba(11,32,70,0.08)", paddingBottom: "16px" }}>
+                {title}
+            </h2>
+        </div>
+    );
+}
 
 export default function Leadership() {
     return (
-        <main className="min-h-screen bg-slate-50 py-16">
-            <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+        <main className="min-h-screen" style={{ background: "#F7F8FA" }}>
 
-                {/* Hero Section */}
-                <div className="text-center mb-16 space-y-4">
-                    <h1 className="text-4xl md:text-5xl font-bold text-[#0B2046]">Our Leadership Team</h1>
-                    <p className="text-blue-600 font-semibold tracking-wider uppercase">
+            {/* Navy Hero Band */}
+            <div className="hero-band py-20 px-4 text-white text-center">
+                <div className="container mx-auto max-w-3xl space-y-4">
+                    <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "10px", fontWeight: 600, letterSpacing: "0.22em", color: "var(--gold-light)", textTransform: "uppercase" }}>
+                        TRAINING · INNOVATION · RESOURCING
+                    </p>
+                    <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(2.4rem, 5vw, 3.5rem)", fontWeight: 700, lineHeight: 1.1 }}>
+                        Our Leadership Team
+                    </h1>
+                    <div style={{ width: "48px", height: "2px", background: "var(--gold)", margin: "0 auto" }} />
+                    <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "10px", fontWeight: 600, letterSpacing: "0.18em", color: "rgba(255,255,255,0.5)", textTransform: "uppercase" }}>
                         TRAINING - INNOVATION - RESOURCING
                     </p>
                 </div>
+            </div>
 
-                <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-5xl py-20">
+                <div className="bg-white p-8 md:p-14" style={{ borderRadius: "2px", boxShadow: "0 4px 32px rgba(11,32,70,0.07)" }}>
+
                     {/* Executive Team */}
                     <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-[#0B2046] mb-8 border-b pb-4">Executive Team</h2>
+                        <SectionLabel label="Our Team" title="Executive Team" />
                         <div className="space-y-8">
                             {executives.map((exec, idx) => (
-                                <Card key={idx} className="border-none shadow-sm bg-slate-50 relative overflow-hidden">
-                                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600"></div>
-                                    <CardContent className="p-8">
+                                <Card
+                                    key={idx}
+                                    style={{ border: "none", borderRadius: "2px", background: "#F7F8FA", position: "relative", overflow: "hidden" }}
+                                >
+                                    {/* Gold left accent border */}
+                                    <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "3px", background: "linear-gradient(180deg, var(--gold) 0%, var(--gold-light) 100%)" }} />
+                                    <CardContent className="p-8 pl-10">
                                         <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-                                            {/* Avatar Column */}
+                                            {/* Avatar */}
                                             <div className="flex-shrink-0">
-                                                <div className="h-20 w-20 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-md">
-                                                    <User className="h-10 w-10" />
+                                                <div className="h-20 w-20 rounded-full flex items-center justify-center text-white shadow-md"
+                                                    style={{ background: "linear-gradient(135deg, #0B2046 0%, #112a5c 100%)", border: "2.5px solid var(--gold)" }}>
+                                                    <User className="h-9 w-9" style={{ opacity: 0.8 }} />
                                                 </div>
                                             </div>
 
-                                            {/* Details Column */}
-                                            <div className="flex-1 space-y-6">
+                                            {/* Details */}
+                                            <div className="flex-1 space-y-5">
                                                 <div>
-                                                    <h3 className="text-2xl font-bold text-[#0B2046]">{exec.name}</h3>
-                                                    <p className="text-blue-600 font-semibold">{exec.role}</p>
-                                                    <p className="text-slate-500 text-sm">{exec.company}</p>
+                                                    <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#0B2046" }}>{exec.name}</h3>
+                                                    <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.82rem", color: "var(--gold)", fontWeight: 600, letterSpacing: "0.04em", marginTop: "4px" }}>{exec.role}</p>
+                                                    <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.78rem", color: "var(--text-subtle)", marginTop: "2px" }}>{exec.company}</p>
                                                 </div>
-
-                                                <div className="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed">
+                                                <div className="space-y-3">
                                                     {exec.paragraphs.map((p, pIdx) => (
-                                                        <p key={pIdx}>{p}</p>
+                                                        <p key={pIdx} style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.88rem", color: "#4B5563", lineHeight: 1.8, fontWeight: 300 }}>{p}</p>
                                                     ))}
                                                 </div>
-
                                                 <div>
-                                                    <h4 className="font-semibold text-[#0B2046] mb-2">Education</h4>
-                                                    <ul className="list-disc list-inside text-slate-600 text-sm md:text-base space-y-1">
+                                                    <h4 style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.78rem", fontWeight: 600, color: "#0B2046", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Education</h4>
+                                                    <ul className="space-y-1.5">
                                                         {exec.education.map((edu, eIdx) => (
-                                                            <li key={eIdx}>{edu}</li>
+                                                            <li key={eIdx} className="flex items-center gap-3">
+                                                                <span style={{ width: "12px", height: "1.5px", background: "var(--gold)", display: "inline-block", flexShrink: 0 }} />
+                                                                <span style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.82rem", color: "#4B5563", fontWeight: 300 }}>{edu}</span>
+                                                            </li>
                                                         ))}
                                                     </ul>
                                                 </div>
@@ -135,29 +147,37 @@ export default function Leadership() {
                         </div>
                     </div>
 
-                    {/* Our Advisors */}
+                    {/* Advisors */}
                     <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-[#0B2046] mb-8 border-b pb-4">Our Advisors</h2>
-                        <div className="grid md:grid-cols-2 gap-8">
+                        <SectionLabel label="Our Advisors" title="Our Advisors" />
+                        <div className="grid md:grid-cols-2 gap-6">
                             {advisors.map((advisor, idx) => (
-                                <Card key={idx} className="border border-slate-100 shadow-sm bg-white hover:shadow-md transition-shadow">
+                                <Card
+                                    key={idx}
+                                    style={{
+                                        border: "1px solid rgba(11,32,70,0.08)", borderRadius: "2px",
+                                        boxShadow: "0 2px 10px rgba(11,32,70,0.04)",
+                                        transition: "transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease",
+                                        background: "#fff"
+                                    }}
+                                    onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform = "translateY(-3px)"; el.style.boxShadow = "0 10px 28px rgba(11,32,70,0.09)"; el.style.borderColor = "rgba(200,134,10,0.25)"; }}
+                                    onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform = "translateY(0)"; el.style.boxShadow = "0 2px 10px rgba(11,32,70,0.04)"; el.style.borderColor = "rgba(11,32,70,0.08)"; }}
+                                >
                                     <CardContent className="p-8">
-                                        <div className="flex flex-col space-y-6">
-                                            {/* Avatar & Title */}
+                                        <div className="flex flex-col space-y-5">
                                             <div className="flex items-center gap-4">
-                                                <div className="h-16 w-16 rounded-full bg-emerald-600 flex flex-shrink-0 items-center justify-center text-white shadow-md">
-                                                    <User className="h-8 w-8" />
+                                                <div className="h-14 w-14 rounded-full flex flex-shrink-0 items-center justify-center text-white shadow-md"
+                                                    style={{ background: "linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%)" }}>
+                                                    <User className="h-7 w-7" />
                                                 </div>
                                                 <div>
-                                                    <h3 className="text-xl font-bold text-[#0B2046]">{advisor.name}</h3>
-                                                    <p className="text-emerald-600 text-sm font-semibold">{advisor.role}</p>
+                                                    <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.1rem", fontWeight: 600, color: "#0B2046" }}>{advisor.name}</h3>
+                                                    <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.78rem", color: "var(--gold)", fontWeight: 600, letterSpacing: "0.04em", marginTop: "3px" }}>{advisor.role}</p>
                                                 </div>
                                             </div>
-
-                                            {/* Details */}
-                                            <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+                                            <div className="space-y-3">
                                                 {advisor.paragraphs.map((p, pIdx) => (
-                                                    <p key={pIdx}>{p}</p>
+                                                    <p key={pIdx} style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.82rem", color: "#4B5563", lineHeight: 1.8, fontWeight: 300 }}>{p}</p>
                                                 ))}
                                             </div>
                                         </div>
@@ -169,27 +189,37 @@ export default function Leadership() {
 
                     {/* Leadership Philosophy */}
                     <div>
-                        <h2 className="text-3xl font-bold text-[#0B2046] mb-6 border-b pb-4">Our Leadership Philosophy</h2>
-                        <p className="text-slate-600 mb-8 text-center max-w-2xl mx-auto">
+                        <SectionLabel label="What We Believe" title="Our Leadership Philosophy" />
+                        <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: 1.7, maxWidth: "560px", marginBottom: "28px", fontWeight: 300 }}>
                             At TIRWIN, our leadership team embodies the core values that drive our success in the logistics and cargo industry. We believe in:
                         </p>
-
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                             {philosophy.map((item, idx) => (
-                                <Card key={idx} className="border-none shadow-sm bg-slate-50 text-center hover:bg-slate-100 transition-colors">
-                                    <CardContent className="p-8 px-6 flex flex-col items-center">
-                                        <div className="h-16 w-16 rounded-full bg-blue-600 flex items-center justify-center text-white mb-6 shadow-md">
-                                            <item.icon className="h-8 w-8" />
+                                <Card
+                                    key={idx}
+                                    className="group text-center"
+                                    style={{
+                                        border: "1px solid rgba(11,32,70,0.08)", borderRadius: "2px",
+                                        background: "#F7F8FA",
+                                        transition: "transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease",
+                                    }}
+                                    onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform = "translateY(-4px)"; el.style.boxShadow = "0 10px 28px rgba(11,32,70,0.08)"; el.style.background = "#fff"; }}
+                                    onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform = "translateY(0)"; el.style.boxShadow = "none"; el.style.background = "#F7F8FA"; }}
+                                >
+                                    <CardContent className="p-8 flex flex-col items-center">
+                                        <div className="h-14 w-14 rounded-full flex items-center justify-center mb-5 shadow-sm"
+                                            style={{ background: "linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%)", color: "#fff" }}>
+                                            <item.icon className="h-7 w-7" />
                                         </div>
-                                        <h3 className="text-lg font-bold text-[#0B2046] mb-3">{item.title}</h3>
-                                        <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+                                        <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1rem", fontWeight: 600, color: "#0B2046", marginBottom: "8px" }}>{item.title}</h3>
+                                        <p style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.8rem", color: "var(--text-muted)", lineHeight: 1.7, fontWeight: 300 }}>{item.description}</p>
                                     </CardContent>
                                 </Card>
                             ))}
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </main>
     );

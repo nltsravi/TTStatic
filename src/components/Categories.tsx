@@ -1,6 +1,7 @@
+"use client";
+
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 const categories = [
     {
@@ -37,41 +38,123 @@ const categories = [
 
 export function Categories() {
     return (
-        <section className="py-24 bg-slate-50">
+        <section className="py-28 stripe-bg">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="flex flex-col items-center text-center space-y-4 mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#0B2046] tracking-tight">
+
+                {/* Editorial section header */}
+                <div className="mb-16 flex flex-col items-center text-center space-y-5">
+                    <p style={{
+                        fontFamily: "var(--font-dm-sans), sans-serif",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        letterSpacing: "0.2em",
+                        color: "var(--gold)",
+                        textTransform: "uppercase"
+                    }}>
+                        What We Teach
+                    </p>
+                    <h2 style={{
+                        fontFamily: "'Playfair Display', Georgia, serif",
+                        fontSize: "clamp(2rem, 4vw, 3rem)",
+                        fontWeight: 700,
+                        color: "#0B2046",
+                        lineHeight: 1.15,
+                    }}>
                         Explore Our Categories
                     </h2>
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-[800px]">
+                    <p style={{
+                        fontFamily: "var(--font-dm-sans), sans-serif",
+                        fontSize: "1.05rem",
+                        color: "var(--text-muted)",
+                        maxWidth: "600px",
+                        lineHeight: 1.7,
+                        fontWeight: 300,
+                    }}>
                         Find Sessions that match your interests and career goals.
                     </p>
-                    <div className="h-1.5 w-24 bg-orange-500 rounded-full mt-6" />
+                    {/* Dual-line gold rule */}
+                    <div className="flex items-center gap-2 pt-2">
+                        <div style={{ width: "48px", height: "2px", background: "var(--gold)" }} />
+                        <div style={{ width: "8px", height: "8px", background: "var(--gold)", borderRadius: "50%" }} />
+                        <div style={{ width: "48px", height: "2px", background: "var(--gold)" }} />
+                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
                     {categories.map((category, index) => (
-                        <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-none bg-white h-full flex flex-col cursor-pointer">
-                            <div className="relative h-48 w-full bg-slate-100 overflow-hidden">
+                        <Card
+                            key={index}
+                            className="overflow-hidden group cursor-pointer border-0 h-full flex flex-col"
+                            style={{
+                                background: "#fff",
+                                boxShadow: "0 2px 12px rgba(11,32,70,0.07)",
+                                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                                borderRadius: "2px",
+                            }}
+                            onMouseEnter={(e) => {
+                                (e.currentTarget as HTMLElement).style.transform = "translateY(-6px)";
+                                (e.currentTarget as HTMLElement).style.boxShadow = "0 16px 48px rgba(11,32,70,0.14)";
+                            }}
+                            onMouseLeave={(e) => {
+                                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                                (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 12px rgba(11,32,70,0.07)";
+                            }}
+                        >
+                            <div className="relative h-48 w-full overflow-hidden" style={{ background: "#e8eaf0" }}>
                                 <Image
                                     src={category.image}
                                     alt={category.title}
                                     fill
-                                    style={{ objectFit: 'cover' }}
+                                    style={{ objectFit: "cover" }}
                                     className="group-hover:scale-110 transition-transform duration-500"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
-                                <div className="absolute bottom-4 left-4">
-                                    <Badge className="bg-orange-500 hover:bg-orange-600 text-white font-medium shadow-sm">
+                                {/* Gradient overlay */}
+                                <div className="absolute inset-0" style={{
+                                    background: "linear-gradient(to top, rgba(11,32,70,0.75) 0%, rgba(11,32,70,0.15) 55%, transparent 100%)"
+                                }} />
+                                {/* Tag pill */}
+                                <div className="absolute bottom-3 left-3">
+                                    <span style={{
+                                        fontFamily: "var(--font-dm-sans), sans-serif",
+                                        fontSize: "10px",
+                                        fontWeight: 600,
+                                        letterSpacing: "0.1em",
+                                        textTransform: "uppercase",
+                                        color: "#fff",
+                                        background: "rgba(200,134,10,0.9)",
+                                        padding: "3px 8px",
+                                        borderRadius: "1px",
+                                        backdropFilter: "blur(4px)"
+                                    }}>
                                         {category.tag}
-                                    </Badge>
+                                    </span>
                                 </div>
+                                {/* Gold top accent line */}
+                                <div className="absolute top-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                    style={{ background: "linear-gradient(90deg, var(--gold), var(--gold-light))" }}
+                                />
                             </div>
-                            <CardContent className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-xl font-bold text-[#0B2046] mb-3 group-hover:text-orange-600 transition-colors line-clamp-2">
+                            <CardContent className="p-5 flex flex-col flex-grow">
+                                <h3 style={{
+                                    fontFamily: "'Playfair Display', Georgia, serif",
+                                    fontSize: "1.05rem",
+                                    fontWeight: 600,
+                                    color: "#0B2046",
+                                    marginBottom: "0.6rem",
+                                    lineHeight: 1.3,
+                                    transition: "color 0.2s ease",
+                                }}
+                                    className="group-hover:text-[#C8860A]"
+                                >
                                     {category.title}
                                 </h3>
-                                <p className="text-sm text-slate-600 leading-relaxed max-w-prose">
+                                <p style={{
+                                    fontFamily: "var(--font-dm-sans), sans-serif",
+                                    fontSize: "0.8rem",
+                                    color: "var(--text-muted)",
+                                    lineHeight: 1.7,
+                                    fontWeight: 300,
+                                }}>
                                     {category.description}
                                 </p>
                             </CardContent>
