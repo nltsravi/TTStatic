@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Linkedin } from "lucide-react";
-import logoImage from "../../public/tirwin-talent-logo-new.jpg";
+import logoImage from "../../public/tirwin-logo.png";
 
 export function Footer() {
     return (
