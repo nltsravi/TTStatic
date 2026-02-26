@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col text-lg`}
         style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', system-ui, sans-serif" }}
       >
         <Header />

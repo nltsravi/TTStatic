@@ -14,7 +14,7 @@ export function Footer() {
                     {/* Brand & Partner Col */}
                     <div className="lg:col-span-2 space-y-6">
                         <Link href="/" className="inline-block">
-                            <div className="relative h-12 w-48 p-2 rounded"
+                            <div className="relative h-16 w-64 p-2 rounded"
                                 style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(200,134,10,0.15)" }}>
                                 <Image
                                     src={logoImage}
@@ -26,7 +26,7 @@ export function Footer() {
                         </Link>
                         <p style={{
                             fontFamily: "var(--font-dm-sans), sans-serif",
-                            fontSize: "0.83rem",
+                            fontSize: "0.95rem",
                             color: "rgba(255,255,255,0.55)",
                             lineHeight: 1.8,
                             maxWidth: "380px",
@@ -37,7 +37,7 @@ export function Footer() {
                         <div>
                             <p style={{
                                 fontFamily: "var(--font-dm-sans), sans-serif",
-                                fontSize: "9px",
+                                fontSize: "11px",
                                 color: "rgba(200,134,10,0.75)",
                                 letterSpacing: "0.18em",
                                 textTransform: "uppercase",
@@ -46,7 +46,7 @@ export function Footer() {
                             }}>
                                 Technology Partner
                             </p>
-                            <div className="relative h-9 w-28 rounded p-1"
+                            <div className="relative h-10 w-32 rounded p-1"
                                 style={{ background: "rgba(255,255,255,0.95)" }}>
                                 <Image
                                     src="https://www.tirwintalent.com/assets/images/nts-logo.png"
@@ -62,7 +62,7 @@ export function Footer() {
                     <div className="space-y-5">
                         <h4 style={{
                             fontFamily: "'Playfair Display', Georgia, serif",
-                            fontSize: "1rem",
+                            fontSize: "1.125rem",
                             fontWeight: 600,
                             color: "#fff",
                             letterSpacing: "0.02em",
@@ -90,7 +90,7 @@ export function Footer() {
                                         href={link.href}
                                         style={{
                                             fontFamily: "var(--font-dm-sans), sans-serif",
-                                            fontSize: "0.82rem",
+                                            fontSize: "0.95rem",
                                             color: "rgba(255,255,255,0.5)",
                                             transition: "color 0.2s ease",
                                             fontWeight: 300,
@@ -108,7 +108,7 @@ export function Footer() {
                     <div className="space-y-5">
                         <h4 style={{
                             fontFamily: "'Playfair Display', Georgia, serif",
-                            fontSize: "1rem",
+                            fontSize: "1.125rem",
                             fontWeight: 600,
                             color: "#fff",
                             display: "flex",
@@ -159,7 +159,7 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <p style={{
                         fontFamily: "var(--font-dm-sans), sans-serif",
-                        fontSize: "0.75rem",
+                        fontSize: "0.875rem",
                         color: "rgba(255,255,255,0.35)",
                         letterSpacing: "0.04em",
                     }}>
@@ -175,7 +175,7 @@ export function Footer() {
                                 href={l.href}
                                 style={{
                                     fontFamily: "var(--font-dm-sans), sans-serif",
-                                    fontSize: "0.75rem",
+                                    fontSize: "0.875rem",
                                     color: "rgba(255,255,255,0.35)",
                                     transition: "color 0.2s ease",
                                     letterSpacing: "0.04em",
