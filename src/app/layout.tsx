@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tirwin Talent | Logistics & Cargo Training",
+  title: "Tirwin Talent",
   description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
 };
 
@@ -36,10 +36,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col text-lg`}
         style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', system-ui, sans-serif" }}
+        suppressHydrationWarning
       >
         <Header />
         <main className="flex-1">

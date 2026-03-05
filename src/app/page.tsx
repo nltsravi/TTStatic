@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Categories } from "@/components/Categories";
 import { Trainers } from "@/components/Trainers";
+import { BecomeTrainer } from "@/components/BecomeTrainer";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Categories />
       <Trainers />
+      <BecomeTrainer />
     </main>
   );
 }
