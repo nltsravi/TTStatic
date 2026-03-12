@@ -22,20 +22,20 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
       {/* Hero Header */}
       <section className="hero-band w-full pt-20 pb-20 px-4 md:px-6 relative shadow-lg">
         <div className="container mx-auto max-w-5xl animate-fade-up">
-          <Link 
+          <Link
             href="/masterclasses"
             className="inline-flex items-center text-[var(--gold-light)] hover:text-white transition-colors mb-8 text-sm font-bold uppercase tracking-widest"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Masterclasses
           </Link>
-          
+
           <div className="flex flex-col md:flex-row gap-8 items-start justify-between">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight md:max-w-3xl">
               {course.title}
             </h1>
             <div className="icon-gold w-20 h-20 flex-shrink-0 hidden md:flex items-center justify-center shadow-xl">
-               <GraduationCap className="w-10 h-10 text-white" />
+              <GraduationCap className="w-10 h-10 text-white" />
             </div>
           </div>
         </div>
@@ -44,10 +44,10 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
       {/* Main Content Area */}
       <section className="container mx-auto px-4 md:px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-          
+
           {/* Left Column: Details & Modules */}
           <div className="lg:col-span-2 space-y-16 animate-fade-up" style={{ animationDelay: '150ms' }}>
-            
+
             {/* Overview Section */}
             <div>
               <h2 className="text-3xl font-bold font-serif text-[var(--navy)] mb-6 section-rule">
@@ -56,16 +56,16 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
               <p className="text-xl text-[var(--text-body)] leading-relaxed font-light">
                 {course.purpose}
               </p>
-              
+
               <div className="mt-8 bg-white p-6 md:p-8 rounded-2xl border border-[var(--border)] shadow-sm space-y-4">
                 <h3 className="text-lg font-bold text-[var(--navy)] mb-4">Key Learning Outcomes</h3>
                 <p className="text-[var(--text-muted)] leading-relaxed">
-                  <span className="font-semibold text-[var(--text-body)] mr-2">Key Concepts:</span> 
+                  <span className="font-semibold text-[var(--text-body)] mr-2">Key Concepts:</span>
                   {course.keyConcepts}
                 </p>
                 <div className="w-full h-px bg-[var(--border)] my-4"></div>
                 <p className="text-[var(--text-muted)] leading-relaxed">
-                  <span className="font-semibold text-[var(--text-body)] mr-2">Interactive Elements:</span> 
+                  <span className="font-semibold text-[var(--text-body)] mr-2">Interactive Elements:</span>
                   {course.interactiveElements}
                 </p>
               </div>
@@ -114,23 +114,23 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                 ))}
               </div>
             </div>
-            
+
           </div>
 
           {/* Right Column: Sidebar (Logistics & Facilitator) */}
           <div className="space-y-8 animate-fade-up" style={{ animationDelay: '300ms' }}>
-            
+
             {/* Quick Facts Card */}
             <div className="bg-[var(--navy)] text-white rounded-2xl p-8 shadow-xl relative overflow-hidden">
-               {/* Decorative elements */}
-               <div className="absolute -top-12 -right-12 w-32 h-32 bg-white opacity-5 rounded-full blur-2xl"></div>
-               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[var(--gold)] opacity-10 rounded-full blur-3xl"></div>
-               
+              {/* Decorative elements */}
+              <div className="absolute -top-12 -right-12 w-32 h-32 bg-white opacity-5 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-[var(--gold)] opacity-10 rounded-full blur-3xl"></div>
+
               <h3 className="text-2xl font-serif font-bold mb-8 flex items-center gap-3">
                 <BookOpen className="w-6 h-6 text-[var(--gold)]" />
                 Course Logistics
               </h3>
-              
+
               <ul className="space-y-6 relative z-10">
                 <li className="flex items-start">
                   <Clock className="w-6 h-6 mr-4 text-[var(--gold)] flex-shrink-0" />
@@ -156,11 +156,11 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                   </li>
                 )}
               </ul>
-              
+
               <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)]">
-                <button className="w-full py-4 px-6 rounded-lg btn-gold text-lg shadow-lg">
-                  Register Interest
-                </button>
+                <Link href="/user-registration" className="w-full py-4 px-6 rounded-lg btn-gold text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
+                  Enroll Now
+                </Link>
               </div>
             </div>
 
@@ -170,14 +170,14 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                 <Users className="w-6 h-6 text-[var(--gold)]" />
                 About the Facilitator
               </h3>
-              
+
               <div className="space-y-4">
                 <h4 className="text-2xl font-bold text-[var(--navy)]">{course.facilitator.name}</h4>
                 <p className="text-sm font-semibold text-[var(--gold)] uppercase tracking-wide leading-relaxed">
                   {course.facilitator.experience}
                 </p>
                 <div className="w-12 h-1 bg-[var(--gold)] my-4 rounded"></div>
-                
+
                 <div className="text-[var(--text-muted)] text-sm space-y-4 leading-relaxed whitespace-pre-line">
                   {course.facilitator.description}
                 </div>
