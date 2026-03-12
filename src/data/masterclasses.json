@@ -1,0 +1,99 @@
+[
+  {
+    "id": "freight-forwarding",
+    "title": "International Freight Forwarding & Contract Logistics Training",
+    "purpose": "Equip logistics aspirants with industry knowledge & practical tools for success.",
+    "duration": "2 days, 6 hrs total",
+    "format": "Zoom/Teams online",
+    "maxParticipants": "10 (group setting)",
+    "facilitator": {
+      "name": "The Trainer",
+      "experience": "25+ years' experience in global freight forwarding, customs, compliance & training.",
+      "description": "The Trainer is a Freight Forwarding professional with more than 25+ years of experience in Logistics & Freight forwarding industry. She has been actively involved in Global Freight Forwarding, Customs clearance, Compliance, Consulting for license & documentations, training at various Logistics institutions. She is recipient of various awards as recognition from the industry including Women Entrepreneur of the year pertaining to the industry (2016), Woman Business Achiever in Cargo Handling & Logistics (2018)"
+    },
+    "keyConcepts": "Freight forwarder vs carrier vs NVOCC, Incoterms, customs clearance, contract logistics, outsourcing & performance metrics",
+    "interactiveElements": "Case studies, role play, scenario mapping, quick quizzes",
+    "modules": [
+      {
+        "title": "Day 1",
+        "duration": "3 hrs",
+        "focus": "Forwarding & Sea Freight Basics",
+        "details": [
+          "**What is International Freight Forwarding?**: Definitions, 3PL vs 4PL, real-world example (Guided Discussion + Case Study)",
+          "**Sea Freight Basics**: Shipping line collaboration, Incoterms, container types, port challenges (Visual Walkthrough + Scenario Mapping)"
+        ]
+      },
+      {
+        "title": "Day 2",
+        "duration": "3 hrs",
+        "focus": "Air Freight, Customs & Wrap-Up",
+        "details": [
+          "**Air Freight Basics**: Airline coordination, AWB, cargo types, urgency vs cost trade-offs (Role Play + Flowchart Exercise)",
+          "**Customs Clearance & Contract Logistics**: HS codes, documentation, bonded warehouses, contract logistics overview (Mini Lecture + Q&A)",
+          "**Wrap-Up & Feedback**: Key takeaways, feedback, next steps (Open Discussion)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "conflict-negotiation",
+    "title": "Mastering Conflict and Negotiation for Emerging Leaders in Logistics",
+    "purpose": "Emerging leaders in logistics often face conflicts across supply chains, teams, and client relationships. This program equips them with negotiation strategies, conflict resolution frameworks, and real-world case studies tailored to logistics.",
+    "duration": "4 modules (90 min each, Total 6 hrs)",
+    "format": "Online through Zoom",
+    "maxParticipants": "Not specified",
+    "facilitator": {
+      "name": "Jyoti Gupta",
+      "experience": "Trainer, Coach, Motivational Speaker, Co-Author. Certificated Organisational Development Professional.",
+      "description": "Founder - Sculpt Your Style Consulting. Training | Coaching | Refinement. Former Logistics and Client Relations Specialist.\n\nExpertise Includes:\n• Executive Presence & Personal Branding\n• Leadership Communication & Public Speaking\n• Soft Skills & Behavioural Skills Development\n• Customer Service Excellence\n• Sales Communication & Influence\n• Managerial & First-Time Leader Training\n• Senior Leadership Development\n• Professional Etiquette & Grooming\n\nAchievements Awards Certificates (sample):\n• Trainer’s Mastery Certified Soft Skills Trainer from National Institute of Skills Training, New Delhi, India.\n• Educator of the year 2023 from Namaste India Council of Educators (NICE) for outstanding contribution in the field of education.\n• Certificate of appreciation soft skills trainer summit from Leadership Academy.\n• Educator of the year 2022 from Namaste India Council of Educators (NICE).\n• Featured in Lifestyle Magazine Celebrating Womanhood March 2021 edition as empowered and influential women."
+    },
+    "keyConcepts": "Negotiation strategies, conflict resolution frameworks, emotional intelligence in logistics, cross-border challenges.",
+    "interactiveElements": "Scenario-based quizzes, polls, structured role play, case studies.",
+    "modules": [
+      {
+        "title": "Module 1: Understanding Conflict in Logistics",
+        "duration": "90 min",
+        "focus": "Identifying sources of conflict and their impact on operations.",
+        "details": [
+          "**Key Topics**: Types of conflict, conflict escalation model, emotional intelligence in logistics leadership.",
+          "**Interactive Activity**: Role-play: warehouse manager vs. transport coordinator over delayed shipments.",
+          "**Case Study**: Port Congestion Dispute",
+          "**Q&A**"
+        ]
+      },
+      {
+        "title": "Module 2: Negotiation Fundamentals for Leaders",
+        "duration": "90 min",
+        "focus": "Building negotiation skills for everyday logistics challenges.",
+        "details": [
+          "**Key Topics**: Principles of win-win negotiation, BATNA, communication styles.",
+          "**Interactive Activity**: Simulation: Negotiating freight rates between NVOCC and shipper.",
+          "**Case Study**: Air Cargo Rate Negotiation",
+          "**Q&A**"
+        ]
+      },
+      {
+        "title": "Module 3: Advanced Strategies in Conflict Resolution",
+        "duration": "90 min",
+        "focus": "Handling complex, multi-party conflicts.",
+        "details": [
+          "**Key Topics**: Mediation and arbitration, cross-border and cultural challenges, power dynamics.",
+          "**Interactive Activity**: Group exercise: Resolving a three-way dispute between supplier, freight forwarder, and retailer.",
+          "**Case Study**: E-commerce Fulfillment Conflict",
+          "**Q&A**"
+        ]
+      },
+      {
+        "title": "Module 4: Leading with Influence and Collaboration",
+        "duration": "90 min",
+        "focus": "Embedding conflict management into leadership style.",
+        "details": [
+          "**Key Topics**: Collaborative leadership, building trust, turning conflict into innovation.",
+          "**Interactive Activity**: Peer coaching: Sharing personal conflict experiences and reframing them.",
+          "**Case Study**: Global Supply Chain Crisis",
+          "**Q&A**"
+        ]
+      }
+    ]
+  }
+]

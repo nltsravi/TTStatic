@@ -29,6 +29,21 @@ export function Header() {
                         </div>
                     </Link>
                 </div>
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex items-center gap-8">
+                    <Link
+                        href="/masterclasses"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        Masterclasses
+                    </Link>
+                    <Link
+                        href="/user-registration"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        Register Now
+                    </Link>
+                </nav>
             </div>
         </header>
     );
