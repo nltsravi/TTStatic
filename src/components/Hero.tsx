@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
@@ -87,8 +88,9 @@ export function Hero() {
                             size="lg"
                             className="btn-gold h-14 px-8 text-sm tracking-widest uppercase rounded-none"
                             style={{ fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "0.1em" }}
+                            asChild
                         >
-                            START YOUR JOURNEY WITH US
+                            <Link href="/user-registration">START YOUR JOURNEY WITH US</Link>
                         </Button>
                         <Button
                             size="lg"
@@ -100,8 +102,9 @@ export function Hero() {
                                 border: "1px solid rgba(212,160,42,0.5)",
                                 color: "#D4A02A",
                             }}
+                            asChild
                         >
-                            Explore Master Classes
+                            <Link href="/masterclasses">Explore Master Classes</Link>
                         </Button>
                     </div>
                 </div>
