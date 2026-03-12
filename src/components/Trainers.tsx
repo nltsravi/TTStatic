@@ -13,6 +13,13 @@ const trainers = [
         image: "https://www.tirwintalent.com/assets/images/instructor-section.jpg",
         initials: "VK",
     },
+    {
+        name: "Jyoti Gupta",
+        role: "Trainer, Coach & OD Professional",
+        image: "", // No image provided yet, will use AvatarFallback with initials
+        initials: "JG",
+        link: "/masterclasses/conflict-negotiation"
+    }
 ];
 
 export function Trainers() {
@@ -151,7 +158,7 @@ export function Trainers() {
                                     }}
                                     asChild
                                 >
-                                    <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                    <a href={trainer.link || "#"} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                         <Linkedin className="h-3.5 w-3.5" />
                                         <span>View Profile</span>
                                     </a>
