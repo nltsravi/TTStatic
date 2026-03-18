@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { UserPlus } from "lucide-react";
+import RegistrationForm from "./RegistrationForm";
 
 export const metadata = {
   title: "User Registration - Tirwin Talent",
@@ -28,15 +29,9 @@ export default function UserRegistrationPage() {
       <section className="container mx-auto px-4 md:px-6 pb-24">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-[var(--border)] overflow-hidden animate-fade-up" style={{ animationDelay: '150ms' }}>
           <div className="w-full h-[800px] md:h-[1200px] bg-[var(--cream)] relative">
-            {/* Loading state visual indicator could go here, but iframe handles itself */}
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSewPLUL0NJJMrzLmcAVUwzNx7fMfL_7hbfqWI-8jix4Wkjumw/viewform?embedded=true" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }}
-              title="User Registration Form"
-              allowFullScreen
-            >Loading…</iframe>
+            <Suspense fallback={<div className="w-full h-full flex items-center justify-center text-[var(--gold)]">Loading form...</div>}>
+              <RegistrationForm />
+            </Suspense>
           </div>
         </div>
       </section>

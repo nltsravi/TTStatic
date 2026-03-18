@@ -157,9 +157,12 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                 )}
               </ul>
 
-              <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)]">
+              <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)] space-y-4">
                 <Link href="/user-registration" className="w-full py-4 px-6 rounded-lg btn-gold text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
                   Enroll Now
+                </Link>
+                <Link href="/user-registration?form=interested" className="w-full py-4 px-6 rounded-lg border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--navy)] text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
+                  I am interested
                 </Link>
               </div>
             </div>

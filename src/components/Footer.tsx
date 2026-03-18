@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 import logoImage from "../../public/tirwin-logo.png";
 
 export function Footer() {
@@ -141,11 +141,14 @@ export function Footer() {
                                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(200,134,10,0.1)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.5)"; }}
                                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(200,134,10,0.25)"; }}
                             >
-                                <Facebook className="h-4 w-4" style={{ color: "rgba(0,0,0,0.6)" }} />
-                                <span className="sr-only">Facebook</span>
+                                <Instagram className="h-4 w-4" style={{ color: "rgba(0,0,0,0.6)" }} />
+                                <span className="sr-only">Instagram</span>
                             </a>
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/tirwin-talent-0a90aa31a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group"
                                 style={{
                                     width: "38px", height: "38px",
                                     display: "flex", alignItems: "center", justifyContent: "center",
