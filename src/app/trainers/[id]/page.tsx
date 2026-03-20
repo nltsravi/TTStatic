@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import trainers from "@/data/trainers.json";
@@ -45,11 +46,11 @@ export default async function TrainerProfilePage({ params }: { params: Promise<{
             
             <div className="flex-shrink-0">
                 {trainer.image ? (
-                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden" style={{
+                   <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden" style={{
                        border: "4px solid var(--gold)",
                        boxShadow: "0 0 0 4px rgba(200,134,10,0.15), 0 8px 32px rgba(0,0,0,0.4)"
                    }}>
-                       <img src={trainer.image} alt={trainer.name} className="w-full h-full object-cover" />
+                       <Image src={trainer.image} alt={trainer.name} fill className="object-cover" />
                    </div>
                 ) : (
                 <Avatar className="w-32 h-32 md:w-40 md:h-40" style={{
