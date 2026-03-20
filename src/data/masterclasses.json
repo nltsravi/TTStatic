@@ -1,42 +1,5 @@
 [
   {
-    "id": "freight-forwarding",
-    "title": "International Freight Forwarding & Contract Logistics Training",
-    "purpose": "Equip logistics aspirants with industry knowledge & practical tools for success.",
-    "duration": "2 days, 6 hrs total",
-    "format": "Zoom/Teams online",
-    "maxParticipants": "10 (group setting)",
-    "facilitator": {
-      "id": "the-trainer",
-      "name": "The Trainer (TBD)",
-      "experience": "",
-      "description": ""
-    },
-    "keyConcepts": "Freight forwarder vs carrier vs NVOCC, Incoterms, customs clearance, contract logistics, outsourcing & performance metrics",
-    "interactiveElements": "Case studies, role play, scenario mapping, quick quizzes",
-    "modules": [
-      {
-        "title": "Day 1",
-        "duration": "3 hrs",
-        "focus": "Forwarding & Sea Freight Basics",
-        "details": [
-          "**What is International Freight Forwarding?**: Definitions, 3PL vs 4PL, real-world example (Guided Discussion + Case Study)",
-          "**Sea Freight Basics**: Shipping line collaboration, Incoterms, container types, port challenges (Visual Walkthrough + Scenario Mapping)"
-        ]
-      },
-      {
-        "title": "Day 2",
-        "duration": "3 hrs",
-        "focus": "Air Freight, Customs & Wrap-Up",
-        "details": [
-          "**Air Freight Basics**: Airline coordination, AWB, cargo types, urgency vs cost trade-offs (Role Play + Flowchart Exercise)",
-          "**Customs Clearance & Contract Logistics**: HS codes, documentation, bonded warehouses, contract logistics overview (Mini Lecture + Q&A)",
-          "**Wrap-Up & Feedback**: Key takeaways, feedback, next steps (Open Discussion)"
-        ]
-      }
-    ]
-  },
-  {
     "id": "conflict-negotiation",
     "heroImage": "/mastering-conflict.png",
     "title": "Mastering Conflict and Negotiation for Emerging Leaders in Logistics",
@@ -97,6 +60,43 @@
           "**Interactive Activity**: Peer coaching: Sharing personal conflict experiences and reframing them.",
           "**Case Study**: Global Supply Chain Crisis",
           "**Q&A**"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "freight-forwarding",
+    "title": "International Freight Forwarding & Contract Logistics Training",
+    "purpose": "Equip logistics aspirants with industry knowledge & practical tools for success.",
+    "duration": "2 days, 6 hrs total",
+    "format": "Zoom/Teams online",
+    "maxParticipants": "10 (group setting)",
+    "facilitator": {
+      "id": "the-trainer",
+      "name": "The Trainer (TBD)",
+      "experience": "",
+      "description": ""
+    },
+    "keyConcepts": "Freight forwarder vs carrier vs NVOCC, Incoterms, customs clearance, contract logistics, outsourcing & performance metrics",
+    "interactiveElements": "Case studies, role play, scenario mapping, quick quizzes",
+    "modules": [
+      {
+        "title": "Day 1",
+        "duration": "3 hrs",
+        "focus": "Forwarding & Sea Freight Basics",
+        "details": [
+          "**What is International Freight Forwarding?**: Definitions, 3PL vs 4PL, real-world example (Guided Discussion + Case Study)",
+          "**Sea Freight Basics**: Shipping line collaboration, Incoterms, container types, port challenges (Visual Walkthrough + Scenario Mapping)"
+        ]
+      },
+      {
+        "title": "Day 2",
+        "duration": "3 hrs",
+        "focus": "Air Freight, Customs & Wrap-Up",
+        "details": [
+          "**Air Freight Basics**: Airline coordination, AWB, cargo types, urgency vs cost trade-offs (Role Play + Flowchart Exercise)",
+          "**Customs Clearance & Contract Logistics**: HS codes, documentation, bonded warehouses, contract logistics overview (Mini Lecture + Q&A)",
+          "**Wrap-Up & Feedback**: Key takeaways, feedback, next steps (Open Discussion)"
         ]
       }
     ]
