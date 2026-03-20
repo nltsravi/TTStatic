@@ -19,62 +19,64 @@ export default function MasterclassesPage() {
 
       {/* Cards Grid */}
       <section className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {masterclasses.map((course, idx) => (
             <div 
               key={course.id}
-              className="group relative bg-white border border-[var(--border)] hover:border-[var(--gold)] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full animate-fade-up"
-              style={{ animationDelay: `${idx * 150}ms` }}
+              className="group relative bg-white border border-[var(--border)] hover:border-[var(--gold)] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full animate-fade-up"
+              style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className="p-8 md:p-10 flex-grow flex flex-col">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="icon-gold w-14 h-14 flex-shrink-0">
-                    <GraduationCap className="w-7 h-7" />
+              <div 
+                className="relative h-48 w-full bg-cover bg-center flex flex-col justify-end overflow-hidden flex-shrink-0"
+                style={{ backgroundImage: `url(${course.heroImage || '/mastering-conflict.png'})` }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)] via-[var(--navy)]/80 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100"></div>
+                <div className="relative z-10 p-5 flex items-start gap-3 w-full">
+                  <div className="flex items-center justify-center w-8 h-8 rounded bg-[var(--gold)] flex-shrink-0 shadow-sm transform -translate-y-1">
+                    <GraduationCap className="w-4 h-4 text-[var(--navy)]" />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-[var(--navy)] tracking-tight leading-snug mt-1">
+                  <h3 className="text-lg md:text-xl font-bold text-white tracking-tight leading-snug line-clamp-3 drop-shadow-md">
                     {course.title}
                   </h3>
                 </div>
-                
-                <p className="text-lg text-[var(--text-muted)] mb-8 flex-grow leading-relaxed">
-                  {course.purpose}
-                </p>
-
-                <div className="space-y-4 mb-10 bg-[var(--cool-grey)] p-6 rounded-xl border border-[var(--border)]">
-                  <div className="flex items-center text-[var(--text-body)]">
-                    <Clock className="w-5 h-5 mr-4 text-[var(--gold)]" />
-                    <span className="font-semibold w-24">Duration:</span>
+              </div>
+              
+              <div className="p-5 pt-6 flex-grow flex flex-col bg-white">
+                <div className="space-y-3 flex-grow mb-6 bg-[var(--cool-grey)] p-4 rounded-xl border border-[var(--border)] text-sm">
+                  <div className="flex items-start text-[var(--text-body)]">
+                    <Clock className="w-4 h-4 mr-2 mt-0.5 text-[var(--gold)] flex-shrink-0" />
+                    <span className="font-semibold w-20 flex-shrink-0">Duration:</span>
                     <span className="font-light">{course.duration}</span>
                   </div>
-                  <div className="flex items-center text-[var(--text-body)]">
-                    <Video className="w-5 h-5 mr-4 text-[var(--gold)]" />
-                    <span className="font-semibold w-24">Format:</span>
+                  <div className="flex items-start text-[var(--text-body)]">
+                    <Video className="w-4 h-4 mr-2 mt-0.5 text-[var(--gold)] flex-shrink-0" />
+                    <span className="font-semibold w-20 flex-shrink-0">Format:</span>
                     <span className="font-light">{course.format}</span>
                   </div>
                   {/* @ts-ignore: fee might be missing in some objects */}
                   {course.fee && (
-                    <div className="flex items-center text-[var(--text-body)] mt-4">
-                      <Tag className="w-5 h-5 mr-4 text-[var(--gold)]" />
-                      <span className="font-semibold w-24">Course Fee:</span>
+                    <div className="flex items-start text-[var(--text-body)]">
+                      <Tag className="w-4 h-4 mr-2 mt-0.5 text-[var(--gold)] flex-shrink-0" />
+                      <span className="font-semibold w-20 flex-shrink-0">Fee:</span>
                       <span className="font-light">{course.fee}</span>
                     </div>
                   )}
-                  <div className="flex items-center text-[var(--text-body)] mt-4">
-                    <Users className="w-5 h-5 mr-4 text-[var(--gold)]" />
-                    <span className="font-semibold w-24">Facilitator:</span>
+                  <div className="flex items-start text-[var(--text-body)]">
+                    <Users className="w-4 h-4 mr-2 mt-0.5 text-[var(--gold)] flex-shrink-0" />
+                    <span className="font-semibold w-20 flex-shrink-0">Facilitator:</span>
                     <Link href={`/trainers/${course.facilitator.id}`} className="font-light hover:text-[var(--gold)] transition-colors">
                         {course.facilitator.name}
                     </Link>
                   </div>
                 </div>
 
-                <div className="pt-2 flex justify-end">
+                <div className="pt-2 flex justify-start mt-auto">
                   <Link 
                     href={`/masterclasses/${course.id}`}
-                    className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded-lg hover:bg-[var(--navy)] hover:text-white transition-colors duration-300"
+                    className="inline-flex items-center justify-center px-5 py-2.5 text-sm bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded border-opacity-80 hover:bg-[var(--navy)] hover:text-white transition-colors duration-300 w-full"
                   >
-                    Explore Masterclass
-                    <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                    Explore Course
+                    <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
