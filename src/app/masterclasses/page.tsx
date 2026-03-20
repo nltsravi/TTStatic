@@ -1,6 +1,6 @@
 import Link from "next/link";
 import masterclasses from "@/data/masterclasses.json";
-import { Clock, Users, Video, GraduationCap, ArrowRight } from "lucide-react";
+import { Clock, Users, Video, GraduationCap, ArrowRight, Tag } from "lucide-react";
 
 export default function MasterclassesPage() {
   return (
@@ -51,10 +51,20 @@ export default function MasterclassesPage() {
                     <span className="font-semibold w-24">Format:</span>
                     <span className="font-light">{course.format}</span>
                   </div>
-                  <div className="flex items-center text-[var(--text-body)]">
+                  {/* @ts-ignore: fee might be missing in some objects */}
+                  {course.fee && (
+                    <div className="flex items-center text-[var(--text-body)] mt-4">
+                      <Tag className="w-5 h-5 mr-4 text-[var(--gold)]" />
+                      <span className="font-semibold w-24">Course Fee:</span>
+                      <span className="font-light">{course.fee}</span>
+                    </div>
+                  )}
+                  <div className="flex items-center text-[var(--text-body)] mt-4">
                     <Users className="w-5 h-5 mr-4 text-[var(--gold)]" />
                     <span className="font-semibold w-24">Facilitator:</span>
-                    <span className="font-light">{course.facilitator.name}</span>
+                    <Link href={`/trainers/${course.facilitator.id}`} className="font-light hover:text-[var(--gold)] transition-colors">
+                        {course.facilitator.name}
+                    </Link>
                   </div>
                 </div>
 
