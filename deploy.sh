@@ -5,8 +5,8 @@ set -e
 
 export AWS_DEFAULT_PROFILE=dev.tirwin.fe.new
 set -o allexport
-#source .env.production 
-source .env.development
+source .env.production 
+#source .env.development
 set +o allexport
 
 echo "🔧 Checking prerequisites..."
@@ -35,9 +35,9 @@ echo "☁️  Deploying to S3 bucket: s3://$S3_BUCKET..."
 aws s3 sync ./out/ s3://$S3_BUCKET/ --delete
 
 # Invalidate CloudFront cache if a distribution ID is provided
-if [ -n "$CLOUDFRONT_DIST_ID" ]; then
+if [ -n "$CLOUDFRONT_DISTRIBUTION_ID" ]; then
     echo "🔄 Invalidating CloudFront cache..."
-    aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
+    aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 fi
 
 echo "✅ Deployment complete! Your site has been uploaded to AWS S3."
