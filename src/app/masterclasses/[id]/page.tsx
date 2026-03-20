@@ -47,7 +47,7 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
 
           {/* Left Column: Details & Modules */}
-          <div className="lg:col-span-2 space-y-16 animate-fade-up" style={{ animationDelay: '150ms' }}>
+          <div className="order-2 lg:order-1 lg:col-span-2 space-y-16 animate-fade-up" style={{ animationDelay: '150ms' }}>
 
             {/* Overview Section */}
             <div>
@@ -119,7 +119,7 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
           </div>
 
           {/* Right Column: Sidebar (Logistics & Facilitator) */}
-          <div className="space-y-8 animate-fade-up" style={{ animationDelay: '300ms' }}>
+          <div className="order-1 lg:order-2 space-y-8 animate-fade-up" style={{ animationDelay: '300ms' }}>
 
             {/* Quick Facts Card */}
             <div className="bg-[var(--navy)] text-white rounded-2xl p-8 shadow-xl relative overflow-hidden">
