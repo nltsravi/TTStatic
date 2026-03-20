@@ -5,8 +5,8 @@ set -e
 
 export AWS_DEFAULT_PROFILE=dev.tirwin.fe.new
 set -o allexport
-source .env.production 
-#source .env.development
+#source .env.production 
+source .env.development
 set +o allexport
 
 echo "🔧 Checking prerequisites..."

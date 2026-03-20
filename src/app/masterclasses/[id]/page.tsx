@@ -21,8 +21,23 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
   return (
     <main className="flex min-h-screen flex-col w-full bg-[var(--cream)]">
       {/* Hero Header */}
-      <section className="hero-band w-full pt-20 pb-20 px-4 md:px-6 relative shadow-lg">
-        <div className="container mx-auto max-w-5xl animate-fade-up">
+      <section className={`w-full pt-20 pb-20 px-4 md:px-6 relative shadow-lg overflow-hidden ${/* @ts-ignore */ !course.heroImage ? 'hero-band' : ''}`}>
+        {/* @ts-ignore */}
+        {course.heroImage && (
+          <>
+            <Image 
+              src={course.heroImage}
+              alt={`${course.title} background`}
+              fill
+              className="object-cover z-0"
+              priority
+            />
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-[#0B2046]/80 z-0 mix-blend-multiply"></div>
+            <div className="absolute inset-0 bg-[#0B2046]/40 z-0"></div>
+          </>
+        )}
+        <div className="container mx-auto max-w-5xl animate-fade-up relative z-10">
           <Link
             href="/masterclasses"
             className="inline-flex items-center text-[var(--gold-light)] hover:text-white transition-colors mb-8 text-sm font-bold uppercase tracking-widest"
