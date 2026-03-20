@@ -35,7 +35,7 @@ export function Header() {
                         href="/masterclasses"
                         className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
                     >
-                        Masterclasses
+                        Master Classes
                     </Link>
                     <Link
                         href="/user-registration"

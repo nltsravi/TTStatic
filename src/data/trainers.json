@@ -1,0 +1,42 @@
+[
+  {
+    "id": "the-trainer",
+    "name": "The Trainer",
+    "role": "Freight Forwarding Professional",
+    "experience": "25+ years' experience in global freight forwarding, customs, compliance & training.",
+    "description": "The Trainer is a Freight Forwarding professional with more than 25+ years of experience in Logistics & Freight forwarding industry. She has been actively involved in Global Freight Forwarding, Customs clearance, Compliance, Consulting for license & documentations, training at various Logistics institutions. She is recipient of various awards as recognition from the industry including Women Entrepreneur of the year pertaining to the industry (2016), Woman Business Achiever in Cargo Handling & Logistics (2018)",
+    "image": ""
+  },
+  {
+    "id": "jyoti-gupta",
+    "name": "Jyoti Gupta",
+    "role": "Founder - Sculpt Your Style Consulting Training | Coaching | Refinement",
+    "experience": "Trainer, Coach, Motivational Speaker, Co Author. Certified Organisational Development Professional, Certified POSH Trainer, Certified Corporate Trainer, Certified Soft Skills Trainer, Certified Life Skills Trainer, Former Client Relations and Logistics Professional.",
+    "description": "Jyoti believes that true development comes from within - when individuals are equipped with the mindset, skillset, and presence to succeed. Her approach blends introspection with implementation, ensuring growth that is both personal and professional. She combines the art of personal transformation with the science of workplace success, delivering high-impact programs that build capability.",
+    "expertise": [
+      "Employee Training & Development",
+      "Communication Skills Training",
+      "Behavioural Skills Training",
+      "Soft Skills Training",
+      "Corporate Etiquette Training",
+      "Self Enhancement",
+      "Style & Etiquette Coaching",
+      "Career Readiness Training",
+      "Stage Speaking Training",
+      "Executive Presence & Leadership",
+      "Customer Service Training",
+      "Sales Acceleration Training"
+    ],
+    "achievements": [
+      "Trainer’s Mastery Certified Soft Skills Trainer from National Institute of Skills Training, New Delhi, India",
+      "POSH Certified Trainer. Prevention, Prohibition, and Redressal of sexual harassment of women at workplace POSH Act 2013, POSH Certified Trainer Concept of Living Charitable Trust, Gujarat, India",
+      "Educator of the year 2023 from Namaste India Council of Educators (NICE) for outstanding contribution in the field of education",
+      "Certificate of appreciation from Mentoria for being subject matter expert",
+      "City Excellence Awards 2023 for making positive difference towards the community",
+      "International Proud Womania Award 2023 for conducting motivational sessions",
+      "Certificate of appreciation from Bhabad publication for being exceptional speaker and moderator",
+      "Certificate of appreciation soft skills trainer summit from Leadership Academy"
+    ],
+    "image": "/trainers/jyoti-gupta.png"
+  }
+]

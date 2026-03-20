@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import masterclasses from "@/data/masterclasses.json";
-import { ArrowLeft, Clock, Users, Video, BookOpen, GraduationCap, CheckCircle } from "lucide-react";
+import { ArrowLeft, Clock, Users, Video, BookOpen, GraduationCap, CheckCircle, Tag } from "lucide-react";
 
 export async function generateStaticParams() {
   return masterclasses.map((course) => ({
@@ -146,6 +146,17 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                     <p className="font-medium text-lg leading-tight">{course.format}</p>
                   </div>
                 </li>
+                {/* @ts-ignore: fee might be missing in some objects */}
+                {course.fee && (
+                  <li className="flex items-start">
+                    <Tag className="w-6 h-6 mr-4 text-[var(--gold)] flex-shrink-0" />
+                    <div>
+                      <p className="text-xs text-[var(--gold-light)] uppercase tracking-wider font-bold mb-1">Course Fee</p>
+                      <p className="font-medium text-lg leading-tight">{course.fee}</p>
+                    </div>
+                  </li>
+                )}
+                {/* @ts-ignore: maxParticipants missing property */}
                 {course.maxParticipants !== "Not specified" && (
                   <li className="flex items-start">
                     <Users className="w-6 h-6 mr-4 text-[var(--gold)] flex-shrink-0" />
@@ -174,16 +185,32 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                 About the Facilitator
               </h3>
 
-              <div className="space-y-4">
-                <h4 className="text-2xl font-bold text-[var(--navy)]">{course.facilitator.name}</h4>
-                <p className="text-sm font-semibold text-[var(--gold)] uppercase tracking-wide leading-relaxed">
-                  {course.facilitator.experience}
-                </p>
-                <div className="w-12 h-1 bg-[var(--gold)] my-4 rounded"></div>
-
-                <div className="text-[var(--text-muted)] text-sm space-y-4 leading-relaxed whitespace-pre-line">
-                  {course.facilitator.description}
+              <div className="flex flex-col gap-6 mb-8">
+                {/* @ts-ignore */}
+                {course.facilitator.image ? (
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[var(--gold)] flex-shrink-0 shadow-md">
+                    {/* @ts-ignore */}
+                    <img src={course.facilitator.image} alt={course.facilitator.name} className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-32 h-32 rounded-full bg-[var(--navy)] text-[var(--gold)] flex items-center justify-center text-4xl font-serif font-bold border-2 border-[var(--gold)] flex-shrink-0 shadow-md">
+                    {course.facilitator.name.charAt(0)}
+                  </div>
+                )}
+                <div>
+                  <Link href={`/trainers/${course.facilitator.id}`} className="hover:text-[var(--gold)] transition-colors group block w-fit">
+                      <h4 className="text-2xl font-bold text-[var(--navy)] group-hover:text-[var(--gold)] transition-colors">{course.facilitator.name}</h4>
+                  </Link>
+                  <p className="text-sm font-semibold text-[var(--gold)] uppercase tracking-wide leading-relaxed mt-2">
+                    {course.facilitator.experience}
+                  </p>
                 </div>
+              </div>
+
+              <div className="w-12 h-1 bg-[var(--gold)] mb-6 rounded"></div>
+
+              <div className="text-[var(--text-muted)] text-sm space-y-4 leading-relaxed whitespace-pre-line">
+                {course.facilitator.description}
               </div>
             </div>
 

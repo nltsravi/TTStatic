@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -16,9 +17,9 @@ const trainers = [
     {
         name: "Jyoti Gupta",
         role: "Trainer, Coach & OD Professional",
-        image: "", // No image provided yet, will use AvatarFallback with initials
+        image: "/trainers/jyoti-gupta.png",
         initials: "JG",
-        link: "/masterclasses/conflict-negotiation"
+        link: "/trainers/jyoti-gupta"
     }
 ];
 
@@ -123,15 +124,17 @@ export function Trainers() {
                             </CardHeader>
                             <CardContent className="px-6 pb-8 space-y-4">
                                 <div>
-                                    <h3 style={{
-                                        fontFamily: "'Playfair Display', Georgia, serif",
-                                        fontSize: "1.1rem",
-                                        fontWeight: 600,
-                                        color: "#0B2046",
-                                        lineHeight: 1.3,
-                                    }}>
-                                        {trainer.name}
-                                    </h3>
+                                    <Link href={trainer.link || "#"} className="hover:text-[var(--gold)] transition-colors">
+                                        <h3 style={{
+                                            fontFamily: "'Playfair Display', Georgia, serif",
+                                            fontSize: "1.1rem",
+                                            fontWeight: 600,
+                                            color: "inherit",
+                                            lineHeight: 1.3,
+                                        }}>
+                                            {trainer.name}
+                                        </h3>
+                                    </Link>
                                     <p style={{
                                         fontFamily: "var(--font-dm-sans), sans-serif",
                                         fontSize: "0.78rem",
@@ -158,10 +161,10 @@ export function Trainers() {
                                     }}
                                     asChild
                                 >
-                                    <a href={trainer.link || "#"} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                    <Link href={trainer.link || "#"} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                         <Linkedin className="h-3.5 w-3.5" />
                                         <span>View Profile</span>
-                                    </a>
+                                    </Link>
                                 </Button>
                             </CardContent>
                         </Card>
