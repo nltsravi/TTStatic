@@ -79,18 +79,22 @@ export default async function TrainerProfilePage({ params }: { params: Promise<{
           <div className="lg:col-span-2 space-y-12 animate-fade-up" style={{ animationDelay: '150ms' }}>
             
             {/* About Section */}
+            {trainer.description && (
             <div className="bg-white p-8 md:p-10 rounded-2xl border border-[var(--border)] shadow-sm">
               <h2 className="text-3xl font-bold font-serif text-[var(--navy)] mb-6 flex items-center gap-3">
                 <BookOpen className="w-8 h-8 text-[var(--gold)]" />
                 About the Facilitator
               </h2>
               <div className="text-lg text-[var(--text-body)] leading-relaxed font-light whitespace-pre-line space-y-6">
-                <p className="font-semibold text-xl text-[var(--navy)] border-l-4 border-[var(--gold)] pl-4 py-1 mb-6">
-                    {trainer.experience}
-                </p>
+                {trainer.experience && (
+                  <p className="font-semibold text-xl text-[var(--navy)] border-l-4 border-[var(--gold)] pl-4 py-1 mb-6">
+                      {trainer.experience}
+                  </p>
+                )}
                 {trainer.description}
               </div>
             </div>
+            )}
 
             {/* Expertise Section */}
             {/* @ts-ignore */}

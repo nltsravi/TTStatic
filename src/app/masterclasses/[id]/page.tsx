@@ -170,9 +170,11 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
               </ul>
 
               <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)] space-y-4">
-                <Link href="/user-registration" className="w-full py-4 px-6 rounded-lg btn-gold text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
-                  Enroll Now
-                </Link>
+                {course.id !== "freight-forwarding" && (
+                  <Link href="/user-registration" className="w-full py-4 px-6 rounded-lg btn-gold text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
+                    Enroll Now
+                  </Link>
+                )}
                 <Link href="/user-registration?form=interested" className="w-full py-4 px-6 rounded-lg border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--navy)] text-lg shadow-lg text-center block transition-all hover:-translate-y-1">
                   I am interested
                 </Link>
@@ -202,17 +204,22 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
                   <Link href={`/trainers/${course.facilitator.id}`} className="hover:text-[var(--gold)] transition-colors group block w-fit">
                       <h4 className="text-2xl font-bold text-[var(--navy)] group-hover:text-[var(--gold)] transition-colors">{course.facilitator.name}</h4>
                   </Link>
-                  <p className="text-sm font-semibold text-[var(--gold)] uppercase tracking-wide leading-relaxed mt-2">
-                    {course.facilitator.experience}
-                  </p>
+                  {course.facilitator.experience && (
+                    <p className="text-sm font-semibold text-[var(--gold)] uppercase tracking-wide leading-relaxed mt-2">
+                      {course.facilitator.experience}
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <div className="w-12 h-1 bg-[var(--gold)] mb-6 rounded"></div>
-
-              <div className="text-[var(--text-muted)] text-sm space-y-4 leading-relaxed whitespace-pre-line">
-                {course.facilitator.description}
-              </div>
+              {course.facilitator.description && (
+                <>
+                  <div className="w-12 h-1 bg-[var(--gold)] mb-6 rounded"></div>
+                  <div className="text-[var(--text-muted)] text-sm space-y-4 leading-relaxed whitespace-pre-line">
+                    {course.facilitator.description}
+                  </div>
+                </>
+              )}
             </div>
 
           </div>
