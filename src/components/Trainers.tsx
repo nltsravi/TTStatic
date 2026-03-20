@@ -107,18 +107,21 @@ export function Trainers() {
                                     style={{ background: "linear-gradient(90deg, var(--gold), var(--gold-light))" }}
                                 />
                                 <div className="relative mx-auto w-24 h-24 mb-2">
-                                    <Avatar className="w-24 h-24" style={{
+                                    <Avatar className="relative w-24 h-24" style={{
                                         border: "3px solid var(--gold)",
                                         boxShadow: "0 0 0 3px rgba(200,134,10,0.15), 0 4px 16px rgba(11,32,70,0.2)"
                                     }}>
-                                        <AvatarImage src={trainer.image} alt={trainer.name} style={{ objectFit: "cover" }} />
-                                        <AvatarFallback style={{
-                                            background: "linear-gradient(135deg, #0B2046 0%, #112a5c 100%)",
-                                            color: "var(--gold-light)",
-                                            fontSize: "1.5rem",
-                                            fontWeight: 700,
-                                            fontFamily: "'Playfair Display', Georgia, serif"
-                                        }}>{trainer.initials}</AvatarFallback>
+                                        {trainer.image ? (
+                                            <Image src={trainer.image} alt={trainer.name} fill className="object-cover" />
+                                        ) : (
+                                            <AvatarFallback style={{
+                                                background: "linear-gradient(135deg, #0B2046 0%, #112a5c 100%)",
+                                                color: "var(--gold-light)",
+                                                fontSize: "1.5rem",
+                                                fontWeight: 700,
+                                                fontFamily: "'Playfair Display', Georgia, serif"
+                                            }}>{trainer.initials}</AvatarFallback>
+                                        )}
                                     </Avatar>
                                 </div>
                             </CardHeader>
