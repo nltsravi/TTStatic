@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
   },
   basePath: repo || '',
   assetPrefix: repo || '',
+  trailingSlash: true
 };
 
 export default nextConfig;
