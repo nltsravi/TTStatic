@@ -21,22 +21,16 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
   return (
     <main className="flex min-h-screen flex-col w-full bg-[var(--cream)]">
       {/* Hero Header */}
-      <section className={`w-full pt-20 pb-20 px-4 md:px-6 relative shadow-lg overflow-hidden ${/* @ts-ignore */ !course.heroImage ? 'hero-band' : ''}`}>
-        {/* @ts-ignore */}
-        {course.heroImage && (
-          <>
-            <Image 
-              src={course.heroImage}
-              alt={`${course.title} background`}
-              fill
-              className="object-cover z-0"
-              priority
-            />
-            {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-[#0B2046]/80 z-0 mix-blend-multiply"></div>
-            <div className="absolute inset-0 bg-[#0B2046]/40 z-0"></div>
-          </>
-        )}
+      <section className="w-full pt-24 pb-20 px-4 md:px-6 relative shadow-lg overflow-hidden bg-[var(--navy)]">
+        <Image 
+          src="/master-classes-for-emerging-leaders.png"
+          alt="Masterclasses background"
+          fill
+          className="object-cover z-0"
+          priority
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy)]/95 via-[var(--navy)]/80 to-[var(--navy)]/90 backdrop-blur-[2px] z-0"></div>
         <div className="container mx-auto max-w-5xl animate-fade-up relative z-10">
           <Link
             href="/masterclasses"
@@ -47,11 +41,11 @@ export default async function MasterclassDetailPage({ params }: { params: Promis
           </Link>
 
           <div className="flex flex-col md:flex-row gap-8 items-start justify-between">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight md:max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight md:max-w-3xl drop-shadow-lg">
               {course.title}
             </h1>
             <div className="icon-gold w-20 h-20 flex-shrink-0 hidden md:flex items-center justify-center shadow-xl">
-              <GraduationCap className="w-10 h-10 text-white" />
+              <GraduationCap className="w-10 h-10 text-[var(--navy)]" />
             </div>
           </div>
         </div>

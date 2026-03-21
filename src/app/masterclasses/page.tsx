@@ -6,12 +6,16 @@ export default function MasterclassesPage() {
   return (
     <main className="flex min-h-screen flex-col w-full bg-[var(--cool-grey)] pb-24">
       {/* Hero Header */}
-      <section className="hero-band w-full pt-24 pb-16 px-4 md:px-6 mb-16 shadow-md transition-all">
-        <div className="container mx-auto space-y-6 max-w-5xl animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#FDF3DC] tracking-tight text-center">
+      <section 
+        className="hero-band relative w-full pt-32 pb-24 px-4 md:px-6 mb-16 shadow-md transition-all bg-cover bg-center overflow-hidden"
+        style={{ backgroundImage: "url('/master-classes-for-emerging-leaders.png')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy)]/95 via-[var(--navy)]/80 to-[var(--navy)]/90 backdrop-blur-[2px]"></div>
+        <div className="relative z-10 container mx-auto space-y-6 max-w-5xl animate-fade-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#FDF3DC] tracking-tight text-center drop-shadow-lg">
             Masterclasses for Emerging Leaders
             </h1>
-            <p className="text-xl md:text-2xl text-[var(--cool-grey)] max-w-3xl mx-auto text-center font-light leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl text-[var(--cool-grey)] max-w-3xl mx-auto text-center font-light leading-relaxed opacity-90 drop-shadow">
             Elevate your logistics expertise with our premium, high-impact training sessions developed and facilitated by industry veterans.
             </p>
         </div>
