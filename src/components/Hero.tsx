@@ -90,7 +90,7 @@ export function Hero() {
                             style={{ fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "0.1em" }}
                             asChild
                         >
-                            <Link href="/user-registration">START YOUR JOURNEY WITH US</Link>
+                            <Link href="/user-registration/?form=interested">START YOUR JOURNEY WITH US</Link>
                         </Button>
                         <Button
                             size="lg"

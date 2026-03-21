@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tirwin Talent Static (TTStatic)
+
+This is a [Next.js](https://nextjs.org) property serving as the static frontend experience. It utilizes static exports (`/out`) mapped securely onto AWS CloudFront over an S3 Website Endpoint to eliminate origin processing bottlenecks.
 
 ## Getting Started
 
-First, run the development server:
+First, install library dependencies and run the local development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to visualize your layout changes locally. The application implements `trailingSlash: true` to ensure directory routing resolves perfectly once deployed to S3 static hosting origins.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Files (`.env`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project deployment structure relies on `.env` files matching your distinct deployment environments. You must create these in your root workspace:
 
-## Learn More
+**`.env.development`** (Used for dev staging environments)
 
-To learn more about Next.js, take a look at the following resources:
+```env
+S3_BUCKET="your-dev-s3-bucket-name"
+CLOUDFRONT_DISTRIBUTION_ID="XXXXXXXXXXXXXX"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**`.env.production`** (Used for production environments)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+S3_BUCKET="your-production-s3-bucket-name"
+CLOUDFRONT_DISTRIBUTION_ID="XXXXXXXXXXXXXX"
+```
 
-## Deploy on Vercel
+> **Note**: Both `.env.development` and `.env.production` should be added to `.gitignore`. *Never commit live AWS CloudFront IDs or Bucket Names to version control.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment to AWS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To simplify deploying your Next.js application, use the configured `./deploy.sh` script.
+
+The deployment script takes one parameter: `<env_name>` which must be `dev` or `prod`.
+If no parameter is passed, deployment natively defaults to the `dev` environment.
+
+```bash
+# Deploys to the development environment bucket (.env.development)
+./deploy.sh dev
+
+# Deploys to the live production bucket (.env.production)
+./deploy.sh prod
+```
+
+### Automation Architecture
+
+1. The script selectively targets your parameter (`dev` / `prod`) and sources the respective `.env` file credentials.
+2. It executes a rigorous `npm run build` process to construct out your fast, flat static assets.
+3. The newly generated `/out` payload is automatically `aws` synced to your configured `$S3_BUCKET`.
+4. Finally, your `$CLOUDFRONT_DISTRIBUTION_ID` endpoints are aggressively invalidated across global edge networks to guarantee your viewers see the absolute latest updates instantly.
+
+> **Credentials Note**: Ensure the AWS profile executing `deploy.sh` is natively exported and valid (it currently invokes `$AWS_DEFAULT_PROFILE=dev.tirwin.fe.new` within the shell context).

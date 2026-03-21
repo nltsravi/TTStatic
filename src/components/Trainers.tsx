@@ -20,6 +20,13 @@ const trainers = [
         image: "/trainers/jyoti-gupta.png",
         initials: "JG",
         link: "/trainers/jyoti-gupta"
+    },
+    {
+        name: "B Srividhya Priya",
+        role: "Founder, Streamline Forwarders",
+        image: "",
+        initials: "BSP",
+        link: "/trainers/b-srividhya-priya"
     }
 ];
 

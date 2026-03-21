@@ -3,10 +3,28 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Determine environment from the first argument (default to 'dev')
+ENV=${1:-dev}
+
+if [ "$ENV" = "prod" ]; then
+    ENV_FILE=".env.production"
+elif [ "$ENV" = "dev" ]; then
+    ENV_FILE=".env.development"
+else
+    echo "❌ Invalid environment parameter: $ENV. Please use 'dev' or 'prod'."
+    exit 1
+fi
+
+echo "🔧 Using environment file: $ENV_FILE"
+
 export AWS_DEFAULT_PROFILE=dev.tirwin.fe.new
 set -o allexport
-source .env.production 
-#source .env.development
+if [ -f "$ENV_FILE" ]; then
+    source "$ENV_FILE"
+else
+    echo "❌ Environment file $ENV_FILE not found."
+    exit 1
+fi
 set +o allexport
 
 echo "🔧 Checking prerequisites..."
@@ -37,7 +55,7 @@ aws s3 sync ./out/ s3://$S3_BUCKET/ --delete
 # Invalidate CloudFront cache if a distribution ID is provided
 if [ -n "$CLOUDFRONT_DISTRIBUTION_ID" ]; then
     echo "🔄 Invalidating CloudFront cache..."
-    aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+    aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*" --no-cli-pager
 fi
 
 echo "✅ Deployment complete! Your site has been uploaded to AWS S3."
