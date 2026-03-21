@@ -97,7 +97,7 @@ export default function BrandAwareness() {
                         </span>
                     </div>
                     <div className="pt-2">
-                        <Link href="https://forms.gle/nvcZMJ45tN5Wj9tY6" target="_blank" rel="noopener noreferrer">
+                        <Link href="/user-registration/?form=interested">
                             <Button size="lg" className="btn-gold px-8 h-13 text-sm uppercase rounded-none tracking-widest">
                                 KNOW MORE
                                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -282,7 +282,7 @@ export default function BrandAwareness() {
                     <h2 style={{ ...serif, fontSize: "clamp(1.8rem, 3vw, 2.4rem)", fontWeight: 700 }}>Your logistics career starts with a single step.</h2>
                     <div style={{ width: "40px", height: "2px", background: "var(--gold)", margin: "0 auto" }} />
                     <div>
-                        <Link href="https://forms.gle/nvcZMJ45tN5Wj9tY6" target="_blank" rel="noopener noreferrer">
+                        <Link href="/user-registration/?form=interested">
                             <Button size="lg" className="btn-gold px-10 h-14 text-sm uppercase tracking-widest rounded-none">
                                 Get Started Today
                             </Button>
