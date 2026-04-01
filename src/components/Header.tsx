@@ -38,6 +38,18 @@ export function Header() {
                         Master Classes
                     </Link>
                     <Link
+                        href="/tirwin-talks"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        Tirwin Talks
+                    </Link>
+                    <Link
+                        href="/training"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        Training
+                    </Link>
+                    <Link
                         href="/user-registration"
                         className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
                     >

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "emerging-tech-last-mile",
+    "title": "Emerging Technologies in Last-Mile Delivery",
+    "description": "The importance of last-mile delivery is growing rapidly with the rise of e-commerce and Q-commerce. However, this crucial stage of delivery often involves significant complexities, leading to increased costs for logistics companies and at times poor customer service.\n\nAs the final leg of delivery is undergoing tech-powered transformation, we’re excited to invite you to a thought-provoking virtual session hosted by “Tirwin Talent”, where we’ll explore the evolving landscape of last-mile delivery in India and beyond.",
+    "speaker": "Multiple Speakers",
+    "duration": "90 mins",
+    "date": "TBD",
+    "format": "Virtual Session",
+    "heroImage": "/masterclasses-hero.png",
+    "keyTakeaways": [
+      {
+        "title": "Real-world B2B challenges in last-mile logistics: billing disputes, RTOs, and urban access constraints",
+        "description": "by Supply Chain & Global Sourcing leader - The Timken Company"
+      },
+      {
+        "title": "Emerging trends: drones, EVs, predictive AI, and micro-fulfillment hubs",
+        "description": "by Mr. Naveen Kolathur – SVP Supply Chain & Head IT – SRM Tech, Professor of practice LIBA"
+      },
+      {
+        "title": "Spotlight on DIGIPIN: India Post’s new geo-coded digital address system and its role in rural reach, emergency response, and delivery precision",
+        "description": "by Mr J. Krishnan - past president ACCAI & member MCCI Governing council, Advisor TIRWIN MANAGEMENT SERVICES"
+      }
+    ]
+  },
+  {
+    "id": "bridging-skill-gap",
+    "title": "Bridging the Skill Gap & Enhancing Recruitment Strategies in the Logistics & Supply Chain Industry",
+    "description": "In today's volatile economic scenario, the real worth of people's education doesn’t result in productive employment. There is an evident gap on skills between industry demand and candidate availability. There is a growing relevance to make people job ready through continuous updating of skills.",
+    "speaker": "Industry Experts",
+    "duration": "60 mins",
+    "date": "TBD",
+    "format": "Virtual Session",
+    "heroImage": "/mastering-conflict.png",
+    "keyTakeaways": [
+      {
+        "title": "Skill Development",
+        "description": "Strategies to continuously update skills to make candidates job-ready"
+      },
+      {
+        "title": "Recruitment Strategies",
+        "description": "Overcoming the gap between industry demand and candidate availability"
+      }
+    ]
+  }
+]
