@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -7,12 +6,13 @@ export function Hero() {
         <div className="relative min-h-[640px] w-full flex items-center justify-center overflow-hidden">
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0" style={{ background: "#0B2046" }}>
-                <Image
-                    src="https://tirwin-media-storage.s3.us-east-1.amazonaws.com/static-images/banner-image-slider.png"
-                    alt="Logistics background"
-                    fill
-                    priority
-                    style={{ objectFit: "cover", objectPosition: "center", opacity: 0.35 }}
+                <video
+                    src="/AI_Revolutionizes_Global_Shipping.mp4"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", opacity: 0.35 }}
                 />
                 {/* Multi-stop gradient overlay: strong left, transparent right */}
                 <div className="absolute inset-0" style={{
