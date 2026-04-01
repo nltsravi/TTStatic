@@ -1,44 +1,30 @@
 [
   {
-    "id": "tr-001",
-    "title": "Corporate Resilience Training",
-    "description": "A comprehensive corporate training program designed to test and improve organizational resilience.",
+    "id": "intl-freight-forwarding",
+    "title": "Corporate workshop on International Freight Forwarding",
+    "description": "The goal of this training is to build a strong conceptual and functional understanding of international logistics for non-operational staff.",
     "trainer": {
-      "name": "Alex Mercer",
-      "id": "trainer-am"
+      "name": "Industry Experts",
+      "id": "trainer-tbd"
     },
-    "duration": "3 Days",
-    "date": "2026-08-01",
-    "format": "On-Site Workshop",
-    "fee": "$500",
-    "heroImage": "/masterclasses-hero.png"
+    "duration": "TBD",
+    "date": "TBD",
+    "format": "Corporate Workshop",
+    "fee": "TBD",
+    "heroImage": "/master-classes-for-emerging-leaders.png"
   },
   {
-    "id": "tr-002",
-    "title": "Advanced Negotiation Skills",
-    "description": "Learn advanced strategies and tactics for high-stakes business negotiations.",
+    "id": "advanced-scm-opt",
+    "title": "Advanced Supply Chain Management & Optimization",
+    "description": "This course provides an in-depth understanding of supply chain design, risk management, and optimization techniques using AI and automation.",
     "trainer": {
-      "name": "Sarah Connor",
-      "id": "trainer-sc"
+      "name": "Industry Experts",
+      "id": "trainer-tbd"
     },
-    "duration": "2 Days",
-    "date": "2026-09-15",
-    "format": "Online Interactive",
-    "fee": "$300",
-    "heroImage": "/mastering-conflict.png"
-  },
-  {
-    "id": "tr-003",
-    "title": "Effective Team Communication",
-    "description": "Workshops focusing on breaking down silos and fostering open communication across remote and hybrid teams.",
-    "trainer": {
-      "name": "David Wallace",
-      "id": "trainer-dw"
-    },
-    "duration": "1 Day",
-    "date": "2026-10-10",
-    "format": "Hybrid",
-    "fee": "$200",
+    "duration": "TBD",
+    "date": "TBD",
+    "format": "Corporate Workshop",
+    "fee": "TBD",
     "heroImage": "/master-classes-for-emerging-leaders.png"
   }
 ]
