@@ -198,6 +198,11 @@ export function Footer() {
                         letterSpacing: "0.04em",
                     }}>
                         © 2025 TIRWIN Management PVT. LTD All Rights Reserved.
+                        {process.env.NEXT_PUBLIC_BUILD_NUMBER && (
+                            <span className="block mt-1 md:inline md:mt-0 md:ml-4 opacity-75">
+                                Build Number: {process.env.NEXT_PUBLIC_BUILD_NUMBER}
+                            </span>
+                        )}
                     </p>
                     <div className="flex items-center gap-5">
                         {[

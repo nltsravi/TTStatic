@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import trainingData from "@/data/training.json";
 import { Clock, Users, Tag, Calendar, GraduationCap, ArrowRight } from "lucide-react";
 
@@ -7,10 +8,10 @@ export default function TrainingPage() {
     <main className="flex min-h-screen flex-col w-full bg-[var(--cool-grey)] pb-24">
       {/* Hero Header */}
       <section 
-        className="hero-band relative w-full pt-32 pb-24 px-4 md:px-6 mb-16 shadow-md transition-all bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('/master-classes-for-emerging-leaders.png')" }}
+        className="hero-band relative w-full pt-32 pb-24 px-4 md:px-6 mb-16 shadow-md transition-all overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy)]/95 via-[var(--navy)]/80 to-[var(--navy)]/90 backdrop-blur-[2px]"></div>
+        <Image src="/master-classes-for-emerging-leaders.png" alt="Training hero" fill className="object-cover z-0" priority />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy)]/95 via-[var(--navy)]/80 to-[var(--navy)]/90 backdrop-blur-[2px] z-0"></div>
         <div className="relative z-10 container mx-auto space-y-6 max-w-5xl animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#FDF3DC] tracking-tight text-center drop-shadow-lg">
             Training & Workshops
@@ -31,10 +32,10 @@ export default function TrainingPage() {
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               <div 
-                className="relative h-48 w-full bg-cover bg-center flex flex-col justify-end overflow-hidden flex-shrink-0"
-                style={{ backgroundImage: `url(${training.heroImage || '/mastering-conflict.png'})` }}
+                className="relative h-48 w-full flex flex-col justify-end overflow-hidden flex-shrink-0"
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)] via-[var(--navy)]/80 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100"></div>
+                <Image src={training.heroImage || '/mastering-conflict.png'} alt={training.title} fill className="object-cover z-0" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)] via-[var(--navy)]/80 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100 z-0"></div>
                 <div className="relative z-10 p-5 flex items-start gap-3 w-full">
                   <div className="flex items-center justify-center w-8 h-8 rounded bg-[var(--gold)] flex-shrink-0 shadow-sm transform -translate-y-1">
                     <GraduationCap className="w-4 h-4 text-[var(--navy)]" />
