@@ -23,8 +23,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tirwin Talent",
-  description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
+  title: {
+    default: "Tirwin Talent | Logistics & Supply Chain Training",
+    template: "%s | Tirwin Talent",
+  },
+  description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries. Empowering professionals through masterclasses and training.",
+  keywords: ["Logistics", "Supply Chain", "Training", "Cargo", "Masterclass", "Tirwin Talent", "Career Empowerment"],
+  openGraph: {
+    title: "Tirwin Talent | Logistics & Supply Chain Training",
+    description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
+    url: "https://tirwintalent.com",
+    siteName: "Tirwin Talent",
+    images: [
+      {
+        url: "https://tirwintalent.com/tirwin-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Tirwin Talent Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tirwin Talent",
+    description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
+    images: ["https://tirwintalent.com/tirwin-logo.png"],
+  },
 };
 
 import { Header } from "@/components/Header";

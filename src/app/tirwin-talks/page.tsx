@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Tirwin Talks",
+  description: "Discover curated insights, webinars, and thought-leadership interviews from prominent voices in logistics and supply chain.",
+};
 import Link from "next/link";
 import talksData from "@/data/tirwin-talks.json";
 import { Clock, Video, Tag, Calendar, User, ArrowRight } from "lucide-react";

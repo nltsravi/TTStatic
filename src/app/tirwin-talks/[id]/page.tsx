@@ -10,6 +10,16 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
+  const { id } = await params;
+  const talk = talksData.find((t) => t.id === id);
+  if (!talk) return {};
+  return {
+    title: talk.title,
+    description: talk.description?.slice(0, 160) || `Tirwin Talk webinar: ${talk.title}`,
+  };
+}
+
 export default async function TirwinTalkDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const talk = talksData.find((t) => t.id === id);

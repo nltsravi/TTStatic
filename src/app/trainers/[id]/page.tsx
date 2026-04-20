@@ -11,6 +11,16 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
+  const { id } = await params;
+  const trainer = trainers.find((t) => t.id === id);
+  if (!trainer) return {};
+  return {
+    title: trainer.name,
+    description: `Read about ${trainer.name}, an expert trainer at Tirwin Talent specializing in Logistics, Supply Chain, and Cargo industries.`,
+  };
+}
+
 export default async function TrainerProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const trainer = trainers.find((t) => t.id === id);

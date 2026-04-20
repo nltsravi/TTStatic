@@ -10,6 +10,16 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
+  const { id } = await params;
+  const course = masterclasses.find((c) => c.id === id);
+  if (!course) return {};
+  return {
+    title: course.title,
+    description: course.description?.slice(0, 160) || `Tirwin Talent masterclass: ${course.title}`,
+  };
+}
+
 export default async function MasterclassDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const course = masterclasses.find((c) => c.id === id);

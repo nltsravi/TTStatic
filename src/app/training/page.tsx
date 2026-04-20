@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Training Programs",
+  description: "Explore our intensive, industry-recognized training programs for global supply chains, logistics, and freight forwarding.",
+};
 import Link from "next/link";
 import Image from "next/image";
 import trainingData from "@/data/training.json";
