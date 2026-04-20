@@ -32,6 +32,12 @@ export function Header() {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-8">
                     <Link
+                        href="/about-us"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        About Us
+                    </Link>
+                    <Link
                         href="/masterclasses"
                         className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
                     >
@@ -48,6 +54,12 @@ export function Header() {
                         className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
                     >
                         Training
+                    </Link>
+                    <Link
+                        href="/contact-us"
+                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
+                    >
+                        Contact Us
                     </Link>
                     <Link
                         href="/user-registration"

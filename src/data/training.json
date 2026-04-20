@@ -1,5 +1,83 @@
 [
   {
+    "id": "logistics-career-compass",
+    "title": "Logistics Career Compass",
+    "description": "Logistics Career Compass is Tirwin Talent’s flagship training initiative designed to guide fresh talent into the vast world of logistics, freight forwarding, and global trade. Built by industry veterans, this program combines technical mastery, real-world simulations, and career mentorship to empower learners to become job-ready professionals.\n\n“Navigate. Learn. Deliver.” – Logistics Career Compass",
+    "trainer": {
+      "name": "Industry Veterans",
+      "id": "trainer-tbd"
+    },
+    "duration": "6 - 8 weeks",
+    "date": "Flexible/Rolling",
+    "format": "Online",
+    "fee": "From ₹15,950",
+    "heroImage": "/logistics-compass-banner.png",
+    "objective": "To equip newcomers with practical skills, industry knowledge, and job readiness for careers in logistics, freight forwarding, and export-import operations.",
+    "targetAudience": [
+      "Graduates and diploma holders seeking careers in supply chain, cargo, and EXIM operations",
+      "Career switchers entering the logistics domain for the first time",
+      "Colleges and institutes looking to offer industry-integrated curriculum",
+      "Rural talent ready for skill-based placement opportunities"
+    ],
+    "features": [
+      { "title": "Delivery", "description": "Online for 6 - 8 weeks (flexible for weekend or evening batches)" },
+      { "title": "Industry Mentorship", "description": "Pre-recorded / Virtual live interactions with logistics leaders" },
+      { "title": "Career Prep", "description": "Resume building, mock interviews, placement support" },
+      { "title": "Certification", "description": "Recognized credential co-branded by Tirwin Talent" }
+    ],
+    "outcomes": [
+      "Confidently handle real-world logistics and EXIM operations",
+      "Build a strong foundation for roles at NVOCCs, freight forwarders, and customs firms",
+      "Be interview-ready with mentorship and career support from industry experts"
+    ],
+    "blocks": [
+      {
+        "title": "Block 1: Foundations of Logistics & Trade",
+        "subtitle": "Laying the groundwork for career clarity and operational understanding",
+        "modules": [
+          "Port of Entry – Introduction to Logistics & EXIM Careers",
+          "Supply Chain Foundations – Key concepts in transportation, warehousing, and inventory",
+          "EXIM Ecosystem – Overview of global trade and import-export operations",
+          "Documentation Deep Dive – Bills, invoices, packing lists, LC, and SOPs"
+        ]
+      },
+      {
+        "title": "Block 2: Trade Compliance & Freight Operations",
+        "subtitle": "Giving learners the toolkit for precision, compliance, and freight handling",
+        "modules": [
+          "Incoterms & Shipping Terms – Understanding trade definitions and responsibilities",
+          "Customs Compliance – Customs basics, DGFT processes, GST rules, EOU/STPI protocols",
+          "NVOCC & Freight Forwarding Operations – Booking, container handling, consolidation",
+          "Tech Tools – Knowledge of digitized logistics platforms, Intro to AI in Logistics"
+        ]
+      },
+      {
+        "title": "Block 3: Applied Skills & Simulation",
+        "subtitle": "Translating knowledge into real-world cargo handling and logistics tech use",
+        "modules": [
+          "Software Tools: WMS/TMS/ERP – Functionality of these applications",
+          "Cargo Documentation Simulations – Role-play, mock bookings, SOP creation",
+          "Dangerous Goods, Regulatory Risk & Audit – DG goods handling, Trade audits, risk flags, mitigation strategies",
+          "Rural & Remote Logistics Planning – Designing accessible supply chain models"
+        ]
+      },
+      {
+        "title": "Block 4: Career Empowerment & Placement Readiness",
+        "subtitle": "Equipping learners with the mindset, soft skills, and mentor guidance to succeed",
+        "modules": [
+          "Soft Skills for Logistics Professionals – Communication, email etiquette, teamwork",
+          "Negotiation & Conflict Resolution – Tactics in customs, vendor, and client contexts",
+          "Career Toolkit – Resume building, interview prep, LinkedIn visibility",
+          "Industry Mentorship & Placement Readiness – Career guidance, certification, job access"
+        ]
+      }
+    ],
+    "pricingOptions": [
+      { "title": "Standard Track", "description": "Full access to 16 modules, certification, mentor guidance", "fee": "₹15,950" },
+      { "title": "Premium Track", "description": "All Standard features + 1:1 career coaching, placement services", "fee": "₹20,850" }
+    ]
+  },
+  {
     "id": "intl-freight-forwarding",
     "title": "Corporate workshop on International Freight Forwarding",
     "description": "The goal of this training is to build a strong conceptual and functional understanding of international logistics for non-operational staff.",

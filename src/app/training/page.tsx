@@ -78,14 +78,31 @@ export default function TrainingPage() {
                   )}
                 </div>
 
-                <div className="pt-2 flex justify-start mt-auto">
-                  <Link 
-                    href={`/training/${training.id}`}
-                    className="inline-flex items-center justify-center px-5 py-2.5 text-sm bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded border-opacity-80 hover:bg-[var(--navy)] hover:text-white transition-colors duration-300 w-full"
-                  >
-                    View Program
-                    <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                <div className="pt-2 flex flex-col md:flex-row gap-3 justify-start mt-auto">
+                  {training.id === 'logistics-career-compass' ? (
+                    <>
+                      <Link 
+                        href={`/training/${training.id}`}
+                        className="inline-flex items-center justify-center px-4 py-2.5 text-sm bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded border-opacity-80 hover:bg-[var(--navy)] hover:text-white transition-colors duration-300 w-full"
+                      >
+                        View Details
+                      </Link>
+                      <Link 
+                        href="/user-registration?form=enroll"
+                        className="inline-flex items-center justify-center px-4 py-2.5 text-sm bg-[var(--gold)] text-[var(--navy)] font-bold rounded hover:bg-[#e6b12a] transition-colors duration-300 w-full"
+                      >
+                        Enroll Now
+                      </Link>
+                    </>
+                  ) : (
+                    <Link 
+                      href={`/training/${training.id}`}
+                      className="inline-flex items-center justify-center px-5 py-2.5 text-sm bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded border-opacity-80 hover:bg-[var(--navy)] hover:text-white transition-colors duration-300 w-full"
+                    >
+                      View Program
+                      <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
