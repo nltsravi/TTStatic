@@ -11,7 +11,7 @@ const trainers = [
     {
         name: "Venkatesh Kuppuswamy (Venkat)",
         role: "Director & Chief Operations Officer",
-        image: "https://www.tirwintalent.com/assets/images/instructor-section.jpg",
+        image: "/venkat-tirwin.jpeg",
         initials: "VK",
     },
     {

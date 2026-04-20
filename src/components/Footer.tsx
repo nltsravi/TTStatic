@@ -49,7 +49,7 @@ export function Footer() {
                             <div className="relative h-10 w-32 rounded p-1 mb-3"
                                 style={{ background: "#fff", border: "1px solid rgba(0,0,0,0.08)" }}>
                                 <Image
-                                    src="https://www.tirwintalent.com/assets/images/nts-logo.png"
+                                    src="/nts-logo.png"
                                     alt="NTS Partner Logo"
                                     fill
                                     style={{ objectFit: "contain" }}
