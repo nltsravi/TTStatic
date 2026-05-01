@@ -12,11 +12,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
   const { id } = await params;
-  const talk = talksData.find((t) => t.id === id);
+  const talk = talksData.find((t) => t.id === id) as any;
   if (!talk) return {};
+  const desc = talk.description || talk.overview || "";
   return {
     title: talk.title,
-    description: talk.description?.slice(0, 160) || `Tirwin Talk webinar: ${talk.title}`,
+    description: desc.slice(0, 160) || `Tirwin Talk webinar: ${talk.title}`,
   };
 }
 

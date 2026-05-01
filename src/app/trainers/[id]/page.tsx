@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
   const { id } = await params;
-  const trainer = trainers.find((t) => t.id === id);
+  const trainer = trainers.find((t) => t.id === id) as any;
   if (!trainer) return {};
   return {
     title: trainer.name,

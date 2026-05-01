@@ -12,11 +12,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<import("next").Metadata> {
   const { id } = await params;
-  const course = masterclasses.find((c) => c.id === id);
+  const course = masterclasses.find((c) => c.id === id) as any;
   if (!course) return {};
+  const desc = course.description || course.purpose || course.keyConcepts || "";
   return {
     title: course.title,
-    description: course.description?.slice(0, 160) || `Tirwin Talent masterclass: ${course.title}`,
+    description: desc.slice(0, 160) || `Tirwin Talent masterclass: ${course.title}`,
   };
 }
 

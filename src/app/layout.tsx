@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -64,8 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* Replace GTM-XXXXXXX with your actual Google Tag Manager ID */}
-      <GoogleTagManager gtmId="GTM-W2TB4365" />
+      <GoogleAnalytics gaId="G-4L2TJZG36G" />
       <body
         className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col text-lg`}
         style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', system-ui, sans-serif" }}
