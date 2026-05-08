@@ -126,7 +126,7 @@ export function Footer() {
                         </h4>
                         <div className="flex items-center gap-3">
                             <a
-                                href="https://www.instagram.com/tirwin.management/"
+                                href="https://www.instagram.com/tirwin_talent/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-center rounded-full bg-gray-50 hover:bg-gray-100 transition-colors"
@@ -159,7 +159,7 @@ export function Footer() {
                                 <span className="sr-only">LinkedIn</span>
                             </a>
                             <a
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61589121061920"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-center rounded-full bg-gray-50 hover:bg-gray-100 transition-colors"
@@ -171,7 +171,7 @@ export function Footer() {
                                 <span className="sr-only">Facebook</span>
                             </a>
                             <a
-                                href="https://wa.me/917358626171?text=Hello%20I%20am%20interested%20on%20your%20webinars."
+                                href="https://wa.me/919361970466?text=Hello%20I%20am%20interested%20on%20your%20webinars."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-center justify-center rounded-full bg-gray-50 hover:bg-gray-100 transition-colors"

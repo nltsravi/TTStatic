@@ -71,7 +71,7 @@ export default function ContactUs() {
                                 {
                                     Icon: Phone,
                                     label: "Phone",
-                                    value: "+91 9841970466",
+                                    value: "+91 9361970466",
                                 },
                                 {
                                     Icon: Mail,
