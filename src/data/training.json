@@ -76,33 +76,5 @@
       { "title": "Standard Track", "description": "Full access to 16 modules, certification, mentor guidance", "fee": "₹15,950" },
       { "title": "Premium Track", "description": "All Standard features + 1:1 career coaching, placement services", "fee": "₹20,850" }
     ]
-  },
-  {
-    "id": "intl-freight-forwarding",
-    "title": "Corporate workshop on International Freight Forwarding",
-    "description": "The goal of this training is to build a strong conceptual and functional understanding of international logistics for non-operational staff.",
-    "trainer": {
-      "name": "Industry Experts",
-      "id": "trainer-tbd"
-    },
-    "duration": "TBD",
-    "date": "TBD",
-    "format": "Corporate Workshop",
-    "fee": "TBD",
-    "heroImage": "/master-classes-for-emerging-leaders.png"
-  },
-  {
-    "id": "advanced-scm-opt",
-    "title": "Advanced Supply Chain Management & Optimization",
-    "description": "This course provides an in-depth understanding of supply chain design, risk management, and optimization techniques using AI and automation.",
-    "trainer": {
-      "name": "Industry Experts",
-      "id": "trainer-tbd"
-    },
-    "duration": "TBD",
-    "date": "TBD",
-    "format": "Corporate Workshop",
-    "fee": "TBD",
-    "heroImage": "/master-classes-for-emerging-leaders.png"
   }
 ]

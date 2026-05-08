@@ -23,6 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.tirwintalent.com"),
   title: {
     default: "Tirwin Talent | Logistics & Supply Chain Training",
     template: "%s | Tirwin Talent",
@@ -56,6 +57,7 @@ export const metadata: Metadata = {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { CanonicalUrl } from '@/components/CanonicalUrl';
 
 export default function RootLayout({
   children,
@@ -64,6 +66,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <CanonicalUrl />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+      </head>
       <GoogleAnalytics gaId="G-4L2TJZG36G" />
       <body
         className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col text-lg`}
