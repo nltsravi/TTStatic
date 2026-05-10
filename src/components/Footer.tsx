@@ -89,7 +89,8 @@ export function Footer() {
                                 { label: "Contact Us", href: "/contact-us" },
                                 { label: "Terms & Conditions", href: "/terms-conditions" },
                                 { label: "Privacy Policy", href: "/privacy-policy" },
-                                { label: "Pricing Policy", href: "/pricing-policy" }
+                                { label: "Pricing Policy", href: "/pricing-policy" },
+                                { label: "FAQ", href: "/faq" }
                             ].map((link) => (
                                 <li key={link.label}>
                                     <Link
