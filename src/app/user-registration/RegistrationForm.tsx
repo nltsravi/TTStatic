@@ -46,44 +46,47 @@ export default function RegistrationForm() {
       return;
     }
 
-    // Prepare Google Form Data
-    const data = new FormData();
-    
-    // Common Fields
-    data.append("entry.1722455060", formData.firstName);
-    data.append("entry.83990205", formData.lastName);
-    data.append("entry.1241286254", formData.email);
-    data.append("entry.358208186", formData.mobile);
-    data.append("entry.1175485496", formData.employment);
-    if (formData.jobTitle) data.append("entry.1964795572", formData.jobTitle);
+    const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
 
-    let formActionUrl = "";
-
-    if (isInterestForm) {
-      // Interest Form mapping
-      formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfnD_JuOtPET85CuFnsptSnv1eQZpuef08VR0wAZHfIjGNFYg/formResponse";
-      if (formData.expectations) data.append("entry.1858730", formData.expectations);
-      if (formData.interestedIn) data.append("entry.909740736", formData.interestedIn);
-      data.append("entry.1177480067", "I Agree"); // I Agree checkbox
-    } else {
-      // Enroll Form mapping
-      formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSewPLUL0NJJMrzLmcAVUwzNx7fMfL_7hbfqWI-8jix4Wkjumw/formResponse";
-      data.append("entry.1514514414", formData.webinarDate);
-      data.append("entry.688307402", formData.transactionId);
-      data.append("entry.220571170", "I Agree"); // I Agree checkbox
+    if (!scriptUrl || scriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+      setError("Configuration Error: Google Apps Script URL is missing.");
+      setIsSubmitting(false);
+      return;
     }
 
+    // Prepare JSON Payload
+    const payload = {
+      formType: isInterestForm ? "interest" : "enroll",
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      mobile: formData.mobile,
+      employment: formData.employment,
+      jobTitle: formData.jobTitle,
+      expectations: isInterestForm ? formData.expectations : undefined,
+      interestedIn: isInterestForm ? formData.interestedIn : undefined,
+      webinarDate: !isInterestForm ? formData.webinarDate : undefined,
+      transactionId: !isInterestForm ? formData.transactionId : undefined,
+      iAgree: true
+    };
+
     try {
-      // Submit to Google Forms silently using no-cors
-      await fetch(formActionUrl, {
+      // Submit to Google Apps Script Webhook
+      // Using 'text/plain' Content-Type avoids CORS preflight requests which Apps Script doesn't handle well
+      const response = await fetch(scriptUrl, {
         method: "POST",
-        mode: "no-cors",
-        body: data
+        body: JSON.stringify(payload),
       });
       
-      // Since no-cors hides the actual response status, we assume success if it didn't throw a network error.
-      setIsSuccess(true);
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setIsSuccess(true);
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
     } catch (err) {
+      console.error(err);
       setError("An error occurred while submitting. Please try again.");
     } finally {
       setIsSubmitting(false);
