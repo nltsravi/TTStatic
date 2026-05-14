@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   env: {
     NEXT_PUBLIC_BUILD_NUMBER: buildNumber,
+  },
+  devIndicators: {
+    appIsrStatus: false,
+    buildActivity: false,
   }
 };
 
