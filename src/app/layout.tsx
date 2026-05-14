@@ -58,6 +58,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { CanonicalUrl } from '@/components/CanonicalUrl';
+import { ChatWidget } from "@/components/chatbot/ChatWidget";
 
 export default function RootLayout({
   children,
@@ -81,6 +82,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ChatWidget />
       </body>
     </html>
   );
