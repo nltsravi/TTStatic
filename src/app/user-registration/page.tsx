@@ -4,8 +4,8 @@ import Image from "next/image";
 import RegistrationForm from "./RegistrationForm";
 
 export const metadata = {
-  title: "User Registration - Tirwin Talent",
-  description: "Register for Tirwin Talent Masterclasses and events.",
+  title: "Register for Logistics Training Programs",
+  description: "Create your Tirwin Talent account to access logistics masterclasses, training programs, and learning resources.",
 };
 
 export default function UserRegistrationPage() {

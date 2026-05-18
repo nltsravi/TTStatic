@@ -38,7 +38,13 @@ export function useChatbot() {
           setStatus(message);
           break;
         case 'progress':
-          // Xenova progress (optional UI display)
+          if (data && data.status === 'downloading' && data.name) {
+            setStatus(`Downloading ${data.file || data.name}: ${Math.round(data.progress || 0)}%`);
+          } else if (data && data.status === 'init') {
+            setStatus(`Initializing ${data.file || data.name}...`);
+          } else if (data && data.status === 'ready') {
+            setStatus('Embedding model loaded.');
+          }
           break;
         case 'ready':
           setIsReady(true);
@@ -77,8 +83,21 @@ export function useChatbot() {
         case 'error':
           setStatus('Error: ' + message);
           setIsGenerating(false);
+          setIsReady(true); // Unlock UI so they aren't stuck
+          setMessages(prev => [...prev, { id: Date.now().toString(), role: 'assistant', content: `SYSTEM ERROR: ${message}` }]);
           break;
       }
+    };
+
+    workerRef.current.onerror = (error) => {
+      console.error('Worker global error:', error);
+      setStatus('Worker Error: ' + error.message);
+      setIsReady(true);
+      setMessages(prev => [...prev, { id: Date.now().toString(), role: 'assistant', content: `CRITICAL ERROR: Worker crashed during initialization. Details: ${error.message || 'Unknown error'}. Check console.` }]);
+    };
+
+    workerRef.current.onmessageerror = (error) => {
+      setStatus('Worker Message Error');
     };
 
     // Trigger initialization

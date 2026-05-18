@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions for Training Programs",
+  description: "Read the terms and conditions related to Tirwin Talent training programs, platform usage, and learning services.",
+};
+
 export default function TermsConditions() {
     return (
         <main className="min-h-screen bg-white py-16">

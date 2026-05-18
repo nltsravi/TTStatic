@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Masterclasses",
-  description: "Deep dive into specialized supply chain strategies and international trade concepts with Tirwin Talent's intensive masterclass sessions.",
+  title: "Tirwin Master Class – Logistics Training Programs",
+  description: "Join Tirwin Master Class for expert-led logistics and supply chain training programs designed to build industry skills and career growth.",
 };
 import Link from "next/link";
 import masterclasses from "@/data/masterclasses.json";

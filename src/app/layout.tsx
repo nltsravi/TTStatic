@@ -25,14 +25,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tirwintalent.com"),
   title: {
-    default: "Tirwin Talent | Logistics & Supply Chain Training",
+    default: "Tirwin Talent – Logistics & Supply Chain Training",
     template: "%s | Tirwin Talent",
   },
-  description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries. Empowering professionals through masterclasses and training.",
+  description: "Tirwin Talent offers expert logistics and supply chain training, masterclasses, and career-focused programs for industry professionals.",
   keywords: ["Logistics", "Supply Chain", "Training", "Cargo", "Masterclass", "Tirwin Talent", "Career Empowerment"],
   openGraph: {
-    title: "Tirwin Talent | Logistics & Supply Chain Training",
-    description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
+    title: "Tirwin Talent – Logistics & Supply Chain Training",
+    description: "Tirwin Talent offers expert logistics and supply chain training, masterclasses, and career-focused programs for industry professionals.",
     url: "https://tirwintalent.com",
     siteName: "Tirwin Talent",
     images: [
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tirwin Talent",
-    description: "A transformative approach to talent management for the Supply Chain, Logistics, and Cargo industries.",
+    title: "Tirwin Talent – Logistics & Supply Chain Training",
+    description: "Tirwin Talent offers expert logistics and supply chain training, masterclasses, and career-focused programs for industry professionals.",
     images: ["https://tirwintalent.com/tirwin-logo.png"],
   },
 };

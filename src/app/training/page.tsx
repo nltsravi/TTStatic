@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Training Programs",
-  description: "Explore our intensive, industry-recognized training programs for global supply chains, logistics, and freight forwarding.",
+  title: "Logistics and Supply Chain Training Programs",
+  description: "Explore industry-focused logistics and supply chain training programs designed to build practical and career-ready skills.",
 };
 import Link from "next/link";
 import Image from "next/image";

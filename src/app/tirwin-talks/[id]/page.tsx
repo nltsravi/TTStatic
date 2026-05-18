@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const talk = talksData.find((t) => t.id === id) as any;
   if (!talk) return {};
-  const desc = talk.description || talk.overview || "";
+  const desc = talk.seoDescription || talk.description || talk.overview || "";
   return {
-    title: talk.title,
-    description: desc.slice(0, 160) || `Tirwin Talk webinar: ${talk.title}`,
+    title: talk.seoTitle || talk.title,
+    description: talk.seoDescription ? desc : (desc.slice(0, 160) || `Tirwin Talk webinar: ${talk.title}`),
   };
 }
 

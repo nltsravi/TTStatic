@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing Policy for Logistics Training Programs",
+  description: "View pricing details, payment policies, and enrollment information for Tirwin Talent logistics training programs.",
+};
+
 export default function PricingPolicy() {
     return (
         <main className="min-h-screen bg-white py-16">

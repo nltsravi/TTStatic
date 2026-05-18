@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const course = masterclasses.find((c) => c.id === id) as any;
   if (!course) return {};
-  const desc = course.description || course.purpose || course.keyConcepts || "";
+  const desc = course.seoDescription || course.description || course.purpose || course.keyConcepts || "";
   return {
-    title: course.title,
-    description: desc.slice(0, 160) || `Tirwin Talent masterclass: ${course.title}`,
+    title: course.seoTitle || course.title,
+    description: course.seoDescription ? desc : (desc.slice(0, 160) || `Tirwin Talent masterclass: ${course.title}`),
   };
 }
 

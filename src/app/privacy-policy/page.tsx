@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy for Tirwin Talent Platform",
+  description: "Learn how Tirwin Talent protects user data, privacy, and information shared through training and learning services.",
+};
+
 export default function PrivacyPolicy() {
     return (
         <main className="min-h-screen bg-white py-16">

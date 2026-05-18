@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Tirwin Talks",
-  description: "Discover curated insights, webinars, and thought-leadership interviews from prominent voices in logistics and supply chain.",
+  title: "Logistics Industry Talks and Supply Chain Insights",
+  description: "Explore expert discussions on logistics trends, supply chain innovation, recruitment, and industry transformation.",
 };
 import Link from "next/link";
 import talksData from "@/data/tirwin-talks.json";
