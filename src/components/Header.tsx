@@ -61,12 +61,6 @@ export function Header() {
                     >
                         Contact Us
                     </Link>
-                    <Link
-                        href="/user-registration"
-                        className="text-base font-medium text-[#3D3D3D] transition-colors hover:text-[#C8860A]"
-                    >
-                        Register Now
-                    </Link>
                 </nav>
             </div>
         </header>
