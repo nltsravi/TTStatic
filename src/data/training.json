@@ -2,7 +2,7 @@
   {
     "id": "logistics-career-compass",
     "title": "Logistics Career Compass",
-    "description": "Logistics Career Compass is Tirwin Talent’s flagship training initiative designed to guide fresh talent into the vast world of logistics, freight forwarding, and global trade. Built by industry veterans, this program combines technical mastery, real-world simulations, and career mentorship to empower learners to become job-ready professionals.\n\n“Navigate. Learn. Deliver.” – Logistics Career Compass",
+    "description": "Logistics Career Compass is Tirwin Talent\u2019s flagship training initiative designed to guide fresh talent into the vast world of logistics, freight forwarding, and global trade. Built by industry veterans, this program combines technical mastery, real-world simulations, and career mentorship to empower learners to become job-ready professionals.\n\n\u201cNavigate. Learn. Deliver.\u201d \u2013 Logistics Career Compass",
     "trainer": {
       "name": "Industry Veterans",
       "id": "trainer-tbd"
@@ -10,7 +10,7 @@
     "duration": "6 - 8 weeks",
     "date": "Flexible/Rolling",
     "format": "Online",
-    "fee": "From ₹15,950",
+    "fee": "From \u20b915,950",
     "heroImage": "/logistics-compass-banner.png",
     "objective": "To equip newcomers with practical skills, industry knowledge, and job readiness for careers in logistics, freight forwarding, and export-import operations.",
     "targetAudience": [
@@ -20,10 +20,22 @@
       "Rural talent ready for skill-based placement opportunities"
     ],
     "features": [
-      { "title": "Delivery", "description": "Online for 6 - 8 weeks (flexible for weekend or evening batches)" },
-      { "title": "Industry Mentorship", "description": "Pre-recorded / Virtual live interactions with logistics leaders" },
-      { "title": "Career Prep", "description": "Resume building, mock interviews, placement support" },
-      { "title": "Certification", "description": "Recognized credential co-branded by Tirwin Talent" }
+      {
+        "title": "Delivery",
+        "description": "Online for 6 - 8 weeks (flexible for weekend or evening batches)"
+      },
+      {
+        "title": "Industry Mentorship",
+        "description": "Pre-recorded / Virtual live interactions with logistics leaders"
+      },
+      {
+        "title": "Career Prep",
+        "description": "Resume building, mock interviews, placement support"
+      },
+      {
+        "title": "Certification",
+        "description": "Recognized credential co-branded by Tirwin Talent"
+      }
     ],
     "outcomes": [
       "Confidently handle real-world logistics and EXIM operations",
@@ -35,46 +47,140 @@
         "title": "Block 1: Foundations of Logistics & Trade",
         "subtitle": "Laying the groundwork for career clarity and operational understanding",
         "modules": [
-          "Port of Entry – Introduction to Logistics & EXIM Careers",
-          "Supply Chain Foundations – Key concepts in transportation, warehousing, and inventory",
-          "EXIM Ecosystem – Overview of global trade and import-export operations",
-          "Documentation Deep Dive – Bills, invoices, packing lists, LC, and SOPs"
+          "Port of Entry \u2013 Introduction to Logistics & EXIM Careers",
+          "Supply Chain Foundations \u2013 Key concepts in transportation, warehousing, and inventory",
+          "EXIM Ecosystem \u2013 Overview of global trade and import-export operations",
+          "Documentation Deep Dive \u2013 Bills, invoices, packing lists, LC, and SOPs"
         ]
       },
       {
         "title": "Block 2: Trade Compliance & Freight Operations",
         "subtitle": "Giving learners the toolkit for precision, compliance, and freight handling",
         "modules": [
-          "Incoterms & Shipping Terms – Understanding trade definitions and responsibilities",
-          "Customs Compliance – Customs basics, DGFT processes, GST rules, EOU/STPI protocols",
-          "NVOCC & Freight Forwarding Operations – Booking, container handling, consolidation",
-          "Tech Tools – Knowledge of digitized logistics platforms, Intro to AI in Logistics"
+          "Incoterms & Shipping Terms \u2013 Understanding trade definitions and responsibilities",
+          "Customs Compliance \u2013 Customs basics, DGFT processes, GST rules, EOU/STPI protocols",
+          "NVOCC & Freight Forwarding Operations \u2013 Booking, container handling, consolidation",
+          "Tech Tools \u2013 Knowledge of digitized logistics platforms, Intro to AI in Logistics"
         ]
       },
       {
         "title": "Block 3: Applied Skills & Simulation",
         "subtitle": "Translating knowledge into real-world cargo handling and logistics tech use",
         "modules": [
-          "Software Tools: WMS/TMS/ERP – Functionality of these applications",
-          "Cargo Documentation Simulations – Role-play, mock bookings, SOP creation",
-          "Dangerous Goods, Regulatory Risk & Audit – DG goods handling, Trade audits, risk flags, mitigation strategies",
-          "Rural & Remote Logistics Planning – Designing accessible supply chain models"
+          "Software Tools: WMS/TMS/ERP \u2013 Functionality of these applications",
+          "Cargo Documentation Simulations \u2013 Role-play, mock bookings, SOP creation",
+          "Dangerous Goods, Regulatory Risk & Audit \u2013 DG goods handling, Trade audits, risk flags, mitigation strategies",
+          "Rural & Remote Logistics Planning \u2013 Designing accessible supply chain models"
         ]
       },
       {
         "title": "Block 4: Career Empowerment & Placement Readiness",
         "subtitle": "Equipping learners with the mindset, soft skills, and mentor guidance to succeed",
         "modules": [
-          "Soft Skills for Logistics Professionals – Communication, email etiquette, teamwork",
-          "Negotiation & Conflict Resolution – Tactics in customs, vendor, and client contexts",
-          "Career Toolkit – Resume building, interview prep, LinkedIn visibility",
-          "Industry Mentorship & Placement Readiness – Career guidance, certification, job access"
+          "Soft Skills for Logistics Professionals \u2013 Communication, email etiquette, teamwork",
+          "Negotiation & Conflict Resolution \u2013 Tactics in customs, vendor, and client contexts",
+          "Career Toolkit \u2013 Resume building, interview prep, LinkedIn visibility",
+          "Industry Mentorship & Placement Readiness \u2013 Career guidance, certification, job access"
         ]
       }
     ],
     "pricingOptions": [
-      { "title": "Standard Track", "description": "Full access to 16 modules, certification, mentor guidance", "fee": "₹15,950" },
-      { "title": "Premium Track", "description": "All Standard features + 1:1 career coaching, placement services", "fee": "₹20,850" }
+      {
+        "title": "Standard Track",
+        "description": "Full access to 16 modules, certification, mentor guidance",
+        "fee": "\u20b915,950"
+      },
+      {
+        "title": "Premium Track",
+        "description": "All Standard features + 1:1 career coaching, placement services",
+        "fee": "\u20b920,850"
+      }
+    ]
+  },
+  {
+    "id": "mastering-conflict-negotiation",
+    "title": "Mastering Conflict & Negotiation",
+    "description": "An Executive 6-Hour B2B Masterclass Tailored for Emerging Leaders in Logistics & Supply Chain Operations.\n\nTurn Operational Friction into Business Advantage. Standard leadership workshops focus on abstract corporate communication and fail in logistics because they ignore high-pressure operational friction\u2014such as warehouse SLA breaches, vessel demurrage disputes, and carrier freight rate pinches. This program transforms conflict into operational efficiency, equipping mid-level managers with domain-tailored negotiation tactics to directly reduce SLA delays, protect vendor margins, and avoid multi-party disputes.",
+    "trainer": {
+      "name": "Ms. Jyoti Gupta",
+      "id": "jyoti-gupta"
+    },
+    "duration": "6 Hours (2x3 hrs or 4x1.5 hrs)",
+    "date": "Flexible / Corporate Cohort Schedule",
+    "format": "Online via Zoom / MS Teams",
+    "fee": "From \u20b925,000 + GST",
+    "heroImage": "/mastering-conflict.png",
+    "objective": "To equip emerging leaders in logistics and supply chain operations with practical negotiation tools, conflict resolution frameworks, and real-world supply chain simulations to resolve operational friction, assert commercial firmness, and build resilient business partnerships.",
+    "targetAudience": [
+      "Emerging leaders, operational leads, and mid-level managers in logistics & supply chain operations",
+      "Warehouse managers, transport coordinators, and port operations leads handling daily friction",
+      "Freight forwarding, NVOCC, and shipper teams negotiating ocean & air freight rates, demurrage, and terms",
+      "Supply chain account managers and commercial procurement specialists managing multi-party contracts"
+    ],
+    "features": [
+      {
+        "title": "Practical Tools",
+        "description": "Grounded in supply chain reality with frameworks to handle daily operational friction."
+      },
+      {
+        "title": "Real-World Scenarios",
+        "description": "Interactive role-plays and simulations analyzing real cases involving NVOCCs, port authorities, freight forwarders, and last-mile delivery partners."
+      },
+      {
+        "title": "Logistics Focused",
+        "description": "Flexible online cohort delivery (Zoom / MS Teams) designed around your team's operational shifts with zero operational loss."
+      },
+      {
+        "title": "Impact Driven",
+        "description": "Delivers tangible tools including a custom Logistics Dispute Playbook, Individual Action Plan, and HR Executive Impact Report."
+      }
+    ],
+    "outcomes": [
+      "Resolve operational disputes faster and build stronger, long-term vendor and client partnerships",
+      "Negotiate freight rates, demurrage, and contract terms with confidence while creating win-win commercial outcomes",
+      "Gain domain-tailored negotiation tactics and conflict resolution frameworks you can apply from Day 1",
+      "Exit with tangible workplace deliverables: custom Logistics Dispute Playbook, individual action plan, and HR impact report"
+    ],
+    "blocks": [
+      {
+        "title": "Stage 1: Pre-Workshop Diagnostic",
+        "subtitle": "Needs survey & dispute case inputs to tailor the learning around your operational reality",
+        "modules": [
+          "Custom online survey sent to participants and HR to capture your company's actual operational pain points",
+          "Collection of anonymized workplace dispute examples to ground all simulations in actual business context"
+        ]
+      },
+      {
+        "title": "Stage 2: 6-Hour Experiential Live Masterclass (4 Core Modules)",
+        "subtitle": "Interactive cohort delivery with role-plays, simulations, and expert facilitation",
+        "modules": [
+          "Module 01: Operational & Cross-Functional Conflict \u2013 Handling warehouse, transport & port-related disputes; escalation models and emotional intelligence in high-stress ops",
+          "Module 02: Commercial & Vendor Negotiation \u2013 Applying win-win strategies, BATNA, and freight rate negotiation simulations between NVOCC and shippers",
+          "Module 03: Multi-Party Disputes & Contracts \u2013 Managing stakeholders, mediation, arbitration, and cross-border friction in 3-way supply chain contracts",
+          "Module 04: Crisis Leadership & Collaboration \u2013 Building partner trust, collaborative leadership, and managing global supply chain crisis negotiations"
+        ]
+      },
+      {
+        "title": "Stage 3: Post-Workshop ROI & Impact",
+        "subtitle": "Sustained application, playbooks, and organizational impact evaluation",
+        "modules": [
+          "Logistics Dispute Playbook: Quick reference guide for daily vendor, client, and team conflicts",
+          "Individual Action Plans: Customized application strategies for ongoing workplace disputes",
+          "HR Executive Report & 30-Day Feedback Loop: Post-training evaluation and manager feedback loop"
+        ]
+      }
+    ],
+    "pricingOptions": [
+      {
+        "title": "Standard Corporate Cohort",
+        "description": "Full 6-hr workshop (10\u201315 participants online), pre-workshop needs survey, standard logistics case library, digital certificates, and Logistics Dispute Playbook.",
+        "fee": "\u20b925,000 + GST"
+      },
+      {
+        "title": "Customized Corporate Cohort (RECOMMENDED)",
+        "description": "Standard package + custom company-specific dispute cases, individual participant action plans, HR executive post-workshop impact report, and 30-day feedback loop.",
+        "fee": "\u20b935,000 + GST"
+      }
     ]
   }
 ]
