@@ -64,5 +64,39 @@
       "Women empowerment award 2024 - On International women’s day at Anna University Campus, Chennai"
     ],
     "image": ""
+  },
+  {
+    "id": "ashok-srivastava",
+    "name": "Ashok Srivastava",
+    "role": "Former Dy. Airport Director / G.M. (Ops), AAI | Aviation Operations & Safety Consultant",
+    "experience": "47+ years of distinguished civil aviation leadership across Air Traffic Control, Airport Operations, and Higher Education. Former Dy. Airport Director & General Manager (Operations), AAI. Authorized Indian Aviation Academy (IAA) Instructor & IATA-Recognized Trainer. Former Professor of Practice (HITS).",
+    "description": "Ashok Srivastava is a revered aviation stalwart with 47 years of exemplary leadership and operational excellence across India’s civil aviation regulatory authorities, major international gateways, and academic institutions. Commencing his career as an Air Traffic Controller with the DGCA in 1978, he went on to dedicate over three decades to the International Airports Authority of India (IAAI) and Airports Authority of India (AAI), retiring as Deputy Airport Director and General Manager (Operations) at NSCBI Airport, Kolkata.\n\nThroughout his distinguished tenure across India's premier aviation hubs—including New Delhi (IGI), Kolkata (NSCBI), Chennai, Mumbai, and Trivandrum—he has steered landmark civil aviation projects. He served as the AAI CHQ Designated Coordinator for the commissioning of CAT-III Instrument Landing System (ILS) operations at Kolkata, spearheaded the commissioning of the Airport Operations Control Centre (AOCC) pilot project at Chennai in 2014, and led the commissioning of major passenger terminals including NDTC & NITC Chennai, Terminal 1B Mumbai, and NDTC Calcutta. His operational leadership also enabled the successful introduction of Code-F Boeing 747-8F operations at Chennai Airport.\n\nA passionate educator and prolific author, Mr. Srivastava has authored the authoritative five-part 'Handbook for Airport Operation Personnel', covering ICAO Annex 14 / DGCA CAR, Airport Emergency Planning, Wildlife Hazard Management, Human Factors, and Safety Management Systems (SMS). He is an authorized instructor with the Indian Aviation Academy (IAA), an IATA-recognized instructor across 13 certified courses, and has served as Professor of Practice (Aviation Management) at Hindustan Institute of Technology & Science (HITS) as well as Business Development Head & Mentor at JT Aviation College.",
+    "expertise": [
+      "Airside Operations & Aerodrome Management",
+      "Air Traffic Control & Airspace Coordination",
+      "Airport Emergency Planning (AEP) & DARP",
+      "Safety Management Systems (SMS) & Risk Assessment",
+      "ICAO Annex 14 & DGCA CAR Compliance",
+      "Airport Operations Control Centre (AOCC) Commissioning",
+      "CAT-III Instrument Landing System (ILS) Operations",
+      "Aircraft Rescue & Firefighting (ARFF) Management",
+      "Aerodrome Licensing & DGCA Safety Audits",
+      "Aviation Security & Bomb Threat Contingency (BTCP)",
+      "Wildlife Hazard Management at Airports",
+      "Air Cargo Operations & Ground Handling"
+    ],
+    "achievements": [
+      "47+ years of distinguished civil aviation career across DGCA, IAAI, AAI, and Higher Academia",
+      "Former Dy. Airport Director & General Manager (Operations) at NSCBI Airport Kolkata and Chennai Airport",
+      "Designated Coordinator from AAI CHQ for commissioning CAT-III B all-weather landing operations at Kolkata",
+      "Commissioned AAI's flagship Airport Operations Control Centre (AOCC) pilot project at Chennai Airport (2014)",
+      "Led operational commissioning of NDTC & NITC Chennai (2013-14), Terminal 1B Mumbai (2005), and NDTC Calcutta (1995)",
+      "Author of the 5-volume 'Handbook for Airport Operation Personnel' (Annex 14, Emergency Planning, Wildlife Hazard, Human Factors, SMS)",
+      "Authorized Indian Aviation Academy (IAA) Instructor & IATA-recognized Instructor for 13 approved courses",
+      "Spearheaded major runway resurfacing and ALS upgradation projects (RWY 19L/01R & 19R/01L) at Kolkata",
+      "Coordinated operational readiness and safety assessment enabling Boeing 747-8F (Code F) operations at Chennai",
+      "Served as Professor of Practice (Aviation Management) at HITS Chennai and Subject Expert with MAKAUT"
+    ],
+    "image": "/trainers/ashok-srivastava.png"
   }
 ]

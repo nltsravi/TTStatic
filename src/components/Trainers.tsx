@@ -27,6 +27,13 @@ const trainers = [
         image: "",
         initials: "BSP",
         link: "/trainers/b-srividhya-priya"
+    },
+    {
+        name: "Ashok Srivastava",
+        role: "Former Dy. Airport Director / GM (Ops), AAI",
+        image: "/trainers/ashok-srivastava.png",
+        initials: "AS",
+        link: "/trainers/ashok-srivastava"
     }
 ];
 
