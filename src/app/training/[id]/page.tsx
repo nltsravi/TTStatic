@@ -236,16 +236,18 @@ export default async function TrainingDetailPage({ params }: { params: Promise<{
                 )}
               </ul>
 
-              <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)] space-y-4">
+              <div className="mt-10 pt-8 border-t border-[rgba(255,255,255,0.1)] space-y-3">
                 <Link 
-                  href={`/user-registration?form=${training.id === 'logistics-career-compass' ? 'enroll' : 'interested'}`} 
-                  className={`w-full py-4 px-6 rounded-lg border-2 text-lg shadow-lg text-center block transition-all hover:-translate-y-1 ${
-                    training.id === 'logistics-career-compass'
-                      ? 'bg-[var(--gold)] border-[var(--gold)] text-[var(--navy)] font-bold hover:bg-[#e6b12a] hover:border-[#e6b12a]'
-                      : 'border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--navy)]'
-                  }`}
+                  href={`/user-registration?form=enroll&program=${training.id}`} 
+                  className="w-full py-3.5 px-6 rounded-lg border-2 border-[#0ea5e9] bg-[#0ea5e9] text-white font-bold text-lg shadow-lg text-center block transition-all hover:-translate-y-1 hover:bg-[#0284c7] hover:border-[#0284c7]"
                 >
-                  {training.id === 'logistics-career-compass' ? 'Enroll Now' : 'I am interested'}
+                  Enroll Now
+                </Link>
+                <Link 
+                  href={`/user-registration?form=interested&program=${training.id}`} 
+                  className="w-full py-3 px-6 rounded-lg border-2 border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--navy)] text-base font-semibold shadow-md text-center block transition-all hover:-translate-y-1"
+                >
+                  I am interested
                 </Link>
               </div>
             </div>

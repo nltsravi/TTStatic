@@ -85,7 +85,30 @@ export default function TrainingPage() {
                 </div>
 
                 <div className="pt-2 flex flex-col md:flex-row gap-3 justify-start mt-auto">
-                  {training.id === 'logistics-career-compass' ? (
+                  {training.id === 'operational-logistics-fast-track' ? (
+                    <div className="flex flex-col gap-2 w-full">
+                      <div className="flex flex-col sm:flex-row gap-2">
+                        <Link 
+                          href={`/training/${training.id}`}
+                          className="inline-flex items-center justify-center px-3 py-2 text-sm bg-transparent border-2 border-[var(--navy)] text-[var(--navy)] font-bold rounded hover:bg-[var(--navy)] hover:text-white transition-colors duration-300 w-full"
+                        >
+                          View Details
+                        </Link>
+                        <Link 
+                          href={`/user-registration?form=enroll&program=${training.id}`}
+                          className="inline-flex items-center justify-center px-3 py-2 text-sm bg-[#0ea5e9] text-white font-bold rounded hover:bg-[#0284c7] transition-colors duration-300 w-full text-center"
+                        >
+                          Enroll Now
+                        </Link>
+                      </div>
+                      <Link 
+                        href={`/user-registration?form=interested&program=${training.id}`}
+                        className="inline-flex items-center justify-center text-xs text-[var(--navy)] font-semibold hover:text-[var(--gold)] hover:underline transition-colors py-1 text-center"
+                      >
+                        Interested in this webinar? Express Interest →
+                      </Link>
+                    </div>
+                  ) : training.id === 'logistics-career-compass' ? (
                     <>
                       <Link 
                         href={`/training/${training.id}`}
@@ -95,7 +118,7 @@ export default function TrainingPage() {
                       </Link>
                       <Link 
                         href="/user-registration?form=enroll"
-                        className="inline-flex items-center justify-center px-4 py-2.5 text-sm bg-[var(--gold)] text-[var(--navy)] font-bold rounded hover:bg-[#e6b12a] transition-colors duration-300 w-full"
+                        className="inline-flex items-center justify-center px-4 py-2.5 text-sm bg-[#0ea5e9] text-white font-bold rounded hover:bg-[#0284c7] transition-colors duration-300 w-full"
                       >
                         Enroll Now
                       </Link>

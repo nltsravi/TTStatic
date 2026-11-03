@@ -1,5 +1,116 @@
 [
   {
+    "id": "operational-logistics-fast-track",
+    "title": "Operational Logistics Fast-Track Certificate",
+    "description": "An intensive 4-module boot camp designed for immediate operational readiness in international freight forwarding. Master end-to-end shipment lifecycles, critical shipping documentation (MBL/HBL, Air Waybills), Incoterms 2020 risk mapping, customs clearance via ICEGATE, and freight costing with real-world case studies and practical auditing templates.\n\n“Master International Freight Operations in Just 6 Hours!” – Tirwin Talent",
+    "trainer": {
+      "name": "Industry Veterans (25+ Years Experience)",
+      "id": "industry-veterans"
+    },
+    "duration": "6 Hours (2 Days, 3 hrs/day)",
+    "date": "Batch A: Nov 18 & 19 | Batch B: Nov 25 & 26 (4:00 PM – 7:00 PM IST)",
+    "format": "Live Interactive Zoom Session",
+    "fee": "₹3,499",
+    "originalFee": "₹20,000",
+    "heroImage": "/master-classes-for-emerging-leaders.png",
+    "objective": "To equip non-operations executives, entry-level supply chain professionals, and job seekers with immediate operational readiness, end-to-end execution workflows, and compliance clarity in international freight forwarding.",
+    "targetAudience": [
+      "Fresh graduates (BBA, B.Com, MBA, Logistics) looking to break into international trade",
+      "Entry-level logistics staff and customs documentation executives seeking fast-track career growth",
+      "Freight forwarding and customer support executives wanting end-to-end operational clarity",
+      "Working professionals in procurement, export-import (EXIM), and trading firms"
+    ],
+    "features": [
+      {
+        "title": "Unbeatable Price Point",
+        "description": "Special launch offer of ₹3,499 (pivoted from ₹20,000) creates an accessible entry into elite logistics training."
+      },
+      {
+        "title": "FREE Placement Support",
+        "description": "Dedicated job placement assistance and resume forwarding to top logistics companies across India upon course completion."
+      },
+      {
+        "title": "10% Alumni Discount",
+        "description": "Exclusive 10% discount on all future online training programs and masterclasses launched by Tirwin."
+      },
+      {
+        "title": "Expert Facilitation",
+        "description": "Led by industry veterans with 25+ years of hands-on freight forwarding leadership and live Q&A."
+      }
+    ],
+    "outcomes": [
+      "Understand the global freight ecosystem: Shippers, Liners, NVOCCs, 3PLs/4PLs, container dynamics (FCL/LCL), and air cargo urgency vs. cost trade-offs",
+      "Master the end-to-end shipment lifecycle: Export/import workflows, booking placements, milestone tracking, arrival notices, DO releases, and CFS/ICD operations",
+      "Confidently prepare and audit core documentation: Master/House Bills of Lading (MBL/HBL), Air Waybills (MAWB/HAWB), Telex releases, and Incoterms 2020 cost/risk transfers",
+      "Navigate customs clearance, compliance & costing: HS Code classification, ICEGATE filing, customs duties/inspections, volumetric vs. chargeable weight, and basic freight quotes"
+    ],
+    "blocks": [
+      {
+        "title": "Module 1: Global Freight Ecosystem & Multimodal Modes",
+        "subtitle": "Roles of Shippers, Liners, NVOCCs, 3PLs/4PLs; FCL vs. LCL container dynamics; Air cargo urgency vs. cost trade-offs",
+        "modules": [
+          "Roles & interplay: Shippers, Ocean Liners, NVOCCs, and 3PL/4PL logistics service providers",
+          "Ocean freight container dynamics: FCL (Full Container Load) vs. LCL (Less than Container Load)",
+          "Air cargo fundamentals: Urgency vs. cost trade-offs, density factors, and routing choices",
+          "Selecting optimal multimodal transportation combinations for global trade lanes"
+        ]
+      },
+      {
+        "title": "Module 2: End-to-End Shipment Lifecycle & Workflows",
+        "subtitle": "Export/import execution workflows, booking placements, milestone tracking, arrival notices, Delivery Order releases, and CFS/ICD operations",
+        "modules": [
+          "Standard operating workflows for export and import shipment execution",
+          "Carrier booking placements, equipment release orders, and container stuffing protocols",
+          "Milestone tracking, exception management, and proactive arrival notices to consignees",
+          "Delivery Order (DO) issuance, CFS (Container Freight Station) & ICD (Inland Container Depot) handoffs"
+        ]
+      },
+      {
+        "title": "Module 3: Core Shipping Documentation & Incoterms 2020",
+        "subtitle": "Master/House Bills of Lading (MBL/HBL), Air Waybills (MAWB/HAWB), Telex releases, Incoterms 2020 cost/risk transfer mapping",
+        "modules": [
+          "Master Bills of Lading (MBL) vs. House Bills of Lading (HBL) roles and liability distribution",
+          "Air Waybills (MAWB/HAWB) structure, cargo consignments, and airway documentation standards",
+          "Surrender procedures, Sea Waybills, and Telex release authorizations",
+          "Incoterms 2020 rules: Pinpoint cost, risk, and insurance transfer points between buyer and seller"
+        ]
+      },
+      {
+        "title": "Module 4: Customs Clearance, Compliance & Freight Costing",
+        "subtitle": "HS Code classification, ICEGATE filing, customs duties/inspections, volumetric vs. chargeable weight calculations, and basic freight quotes",
+        "modules": [
+          "Harmonized System (HS) Code classification principles and tariff schedules",
+          "Indian customs clearance process & electronic documentation filing via ICEGATE",
+          "Customs duty calculations, physical inspections, and compliance risk avoidance strategies",
+          "Volumetric vs. gross vs. chargeable weight calculations and crafting end-to-end freight quotations"
+        ]
+      }
+    ],
+    "batchOptions": [
+      {
+        "id": "option-a",
+        "name": "Option A: Nov 18 & Nov 19",
+        "dates": "Nov 18 & Nov 19",
+        "time": "4:00 PM – 7:00 PM (IST)",
+        "format": "Live Interactive Zoom Session"
+      },
+      {
+        "id": "option-b",
+        "name": "Option B: Nov 25 & Nov 26",
+        "dates": "Nov 25 & Nov 26",
+        "time": "4:00 PM – 7:00 PM (IST)",
+        "format": "Live Interactive Zoom Session"
+      }
+    ],
+    "pricingOptions": [
+      {
+        "title": "Fast-Track Certificate Pass",
+        "description": "Complete 4-module intensive boot camp (6 hours live Zoom), practical auditing templates, Q&A, Certificate, FREE placement support & 10% alumni discount.",
+        "fee": "₹3,499"
+      }
+    ]
+  },
+  {
     "id": "logistics-career-compass",
     "title": "Logistics Career Compass",
     "description": "Logistics Career Compass is Tirwin Talent\u2019s flagship training initiative designed to guide fresh talent into the vast world of logistics, freight forwarding, and global trade. Built by industry veterans, this program combines technical mastery, real-world simulations, and career mentorship to empower learners to become job-ready professionals.\n\n\u201cNavigate. Learn. Deliver.\u201d \u2013 Logistics Career Compass",
